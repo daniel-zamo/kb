@@ -1,51 +1,85 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# README.md
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+## Puesta en Marcha y Solución de Problemas - Sitio con Hugo Blox
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+Este documento detalla los pasos para configurar y levantar el entorno de desarrollo local para este sitio web, basado en Hugo y el framework Hugo Blox (anteriormente Wowchemy).
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+El proceso de configuración inicial presentó algunos desafíos específicos, principalmente relacionados con la gestión de dependencias (npm) y la compatibilidad de versiones entre Hugo y el theme. Este README sirve como guía y recordatorio de las soluciones aplicadas.
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+### Supuestos cumplidos
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+- Sistema operativo: Desktop Debian 12, Linux Mint 22 o superior
+- Hugo, node, npm, npx:
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+  ```bash
+  dzamo@victus:~/2_Areas/daniel-zamo.github.io$ hugo version
+  hugo v0.129.0-e85be29867d71e09ce48d293ad9d1f715bc09bb9+extended linux/amd64 BuildDate=2024-07-17T13:29:16Z VendorInfo=gohugoio
+  dzamo@victus:~/2_Areas/daniel-zamo.github.io$ vim README.md
+  dzamo@victus:~/2_Areas/daniel-zamo.github.io$ node -v
+  v22.17.0
+  dzamo@victus:~/2_Areas/daniel-zamo.github.io$ npm -v
+  10.9.2
+  dzamo@victus:~/2_Areas/daniel-zamo.github.io$ npx -v
+  10.9.2
+  ```
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+---
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+## 1. Prerrequisitos
 
-## We ask you, humbly, to support this open source movement
+Asegúrate de tener instalado el siguiente software:
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+- **Git:** Para clonar y gestionar el repositorio.
+- **Node.js y npm:** Para gestionar las dependencias de JavaScript y CSS. Puedes verificar con `node -v` y `npm -v`.
+- **Hugo (Versión Extendida):** La versión **extendida** es obligatoria.
+  - **¡IMPORTANTE!** La compatibilidad de versiones entre Hugo y el theme es CRÍTICA. Tras varias pruebas, la configuración funcional y estable se logró utilizando **Hugo `v0.129.0-extended`**. Versiones muy recientes (ej. `v0.147.x`) pueden causar errores de plantilla (`GetTerms is not a method...`).
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+---
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+## 2. Guía de Instalación Paso a Paso
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+Sigue estos pasos desde tu terminal.
 
-## Demo image credits
+### Paso 1: Clonar el Repositorio
 
-- [Unsplash](https://unsplash.com)
+```bash
+# Clona tu repositorio (usa la URL SSH o HTTPS según tu configuración)
+git clone git@github.com:daniel-zamo/daniel-zamo.github.io.git
+cd daniel-zamo.github.io
+```
 
-## Latest news
+### Paso 2: Instalar Dependencias de Node.js
 
-<!--START_SECTION:news-->
-* [6 Compelling Reasons I Switched from WordPress to Hugo](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;wordpress&#x2F;)
-* [The 7 best landing page builders in 2024](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;7-best-landing-page-builders&#x2F;)
-* [Start a Blog and Make Money in 2024: Here&#39;s What You Need to Know](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;start-a-blog-and-make-money&#x2F;)
-* [Hugo vs Quarto: Which One is Better for 2024?](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;quarto&#x2F;)
-* [Easily make an academic CV website to get more cites and grow your audience 🚀](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;easily-make-academic-website&#x2F;)
-<!--END_SECTION:news-->
+Esta fue la primera fuente de problemas.
+
+- Problema A: El comando npm install fallaba inicialmente porque el archivo package.json no existía en el repositorio clonado.
+- Problema B: Una vez recuperado package.json, npm install lanzaba un error ERESOLVE debido a un conflicto de versiones con la dependencia prettier.
+
+_Solución Aplicada:_
+
+Se forzó la instalación utilizando la bandera `--legacy-peer-deps`, que instruye a npm para que ignore este tipo de conflictos de dependencias entre paquetes.
+      
+# Solución al conflicto de dependencias
+
+```bash
+npm install --legacy-peer-deps
+```
+
+### Paso 3: Sincronizar Módulos de Hugo
+
+Hugo utiliza su propio sistema de módulos (Go Modules) para gestionar el theme y sus componentes.
+
+```bash      
+# Sincroniza y descarga los módulos definidos en go.mod
+hugo mod tidy
+```
+    
+### Paso 4: Levantar el Servidor de Desarrollo
+
+Con las dependencias de npm y Hugo ya instaladas y sincronizadas, y usando la versión correcta de Hugo (v0.129.0), el servidor debería iniciar correctamente.
+Generated bash
+
+```bash
+hugo server
+```
+ 
