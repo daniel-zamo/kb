@@ -264,5 +264,20 @@ data.head()
 </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://localhost:1313/teaching/debian-desktop-qbittorrent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/teaching/debian-desktop-qbittorrent/</guid>
+      <description>&lt;h1 id=&#34;instalación-de-qbittorrent&#34;&gt;Instalación de qbittorrent&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nala update
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nala install -y qbittorrent
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;referenciassitios-consultados&#34;&gt;Referencias/sitios consultados&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/vexJvZ7SL1E?si=dPhK6MBXHowFSYbL&#34;&gt;Instala qBittorrent y Agrega Servidores de Búsqueda con Jackett en Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

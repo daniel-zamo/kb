@@ -5,12 +5,300 @@
     <link>http://localhost:1313/tags/linux/</link>
       <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <description>Linux</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 30 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 10 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png</url>
       <title>Linux</title>
       <link>http://localhost:1313/tags/linux/</link>
     </image>
+    
+    <item>
+      <title>Virtualbox en Debian</title>
+      <link>http://localhost:1313/articles/virtualbox-in-debian/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/virtualbox-in-debian/</guid>
+      <description>&lt;p&gt;Instalación de Virtualbox en Debian 12 (y/o derivado)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;En este caso de uso se instala VirtualBox sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (ejemplo Ubuntu, Linux Mint, Q4os).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;revisión-versión-linux-instalado&#34;&gt;Revisión versión Linux instalado&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_cae0594d2d5e57fb240fcbeaacf21d1b.webp 400w,
+               /articles/virtualbox-in-debian/Selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_b5ad982d8bb2933b78a0440ccf81c50c.webp 760w,
+               /articles/virtualbox-in-debian/Selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_cae0594d2d5e57fb240fcbeaacf21d1b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;139&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;visitar-página-de-descarga-de-virtualbox&#34;&gt;Visitar página de Descarga de VirtualBox&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_028_hu8723938657310d6df33dd523cb24e94c_272963_55a342b6c93a4f8d44f18ec4f49a3f57.webp 400w,
+               /articles/virtualbox-in-debian/Selection_028_hu8723938657310d6df33dd523cb24e94c_272963_4f0bdbf52b337a74eb42bead0d1e5d9f.webp 760w,
+               /articles/virtualbox-in-debian/Selection_028_hu8723938657310d6df33dd523cb24e94c_272963_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_028_hu8723938657310d6df33dd523cb24e94c_272963_55a342b6c93a4f8d44f18ec4f49a3f57.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;423&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;descarga-de-virtualbox-desde-el-cli&#34;&gt;Descarga de Virtualbox (desde el CLI)&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_07e1a2201a7598588a5cf46c46ff8b81.webp 400w,
+               /articles/virtualbox-in-debian/Selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_9fa30edfee6513f98c1191c7cb56e214.webp 760w,
+               /articles/virtualbox-in-debian/Selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_07e1a2201a7598588a5cf46c46ff8b81.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;305&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_5533b2b8e2ae022690073acc291f7bb6.webp 400w,
+               /articles/virtualbox-in-debian/Selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_b1ff79191db240060ace84d649291cd6.webp 760w,
+               /articles/virtualbox-in-debian/Selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_5533b2b8e2ae022690073acc291f7bb6.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;58&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_032_hu62b99a53ae15f05421ba4f9e3daeae0a_135714_d2ee4985d4dc34760d4c66cb23e06596.webp 400w,
+               /articles/virtualbox-in-debian/Selection_032_hu62b99a53ae15f05421ba4f9e3daeae0a_135714_815b5e212f620a53568301a85f7ace65.webp 760w,
+               /articles/virtualbox-in-debian/Selection_032_hu62b99a53ae15f05421ba4f9e3daeae0a_135714_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_032_hu62b99a53ae15f05421ba4f9e3daeae0a_135714_d2ee4985d4dc34760d4c66cb23e06596.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;362&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_033_hub1af00f9b4c295399d352aa80aacf5cc_186758_7bc87c5272c581025569cd8ce1c50012.webp 400w,
+               /articles/virtualbox-in-debian/Selection_033_hub1af00f9b4c295399d352aa80aacf5cc_186758_63628fda9ea0c3062ba7ba5709c6a323.webp 760w,
+               /articles/virtualbox-in-debian/Selection_033_hub1af00f9b4c295399d352aa80aacf5cc_186758_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_033_hub1af00f9b4c295399d352aa80aacf5cc_186758_7bc87c5272c581025569cd8ce1c50012.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;415&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_034_hu917c2e6e6d10dd76ce778e804e78f373_130675_d1bd76fc12b4f98f2047ee84988993e7.webp 400w,
+               /articles/virtualbox-in-debian/Selection_034_hu917c2e6e6d10dd76ce778e804e78f373_130675_f665177bcfbec9e06ff6cfbf212a06a6.webp 760w,
+               /articles/virtualbox-in-debian/Selection_034_hu917c2e6e6d10dd76ce778e804e78f373_130675_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_034_hu917c2e6e6d10dd76ce778e804e78f373_130675_d1bd76fc12b4f98f2047ee84988993e7.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;412&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_fc29a67d2c0b8b39f40327164db34c8d.webp 400w,
+               /articles/virtualbox-in-debian/Selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_e7e48d88833170a16c023ddd0f982fd6.webp 760w,
+               /articles/virtualbox-in-debian/Selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_fc29a67d2c0b8b39f40327164db34c8d.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;449&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;alt text&#34; srcset=&#34;
+               /articles/virtualbox-in-debian/Selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_cc5d6cf389594644ea605ad4cccd1679.webp 400w,
+               /articles/virtualbox-in-debian/Selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_1a29e40291f71a3b513e49cd84fc5ea0.webp 760w,
+               /articles/virtualbox-in-debian/Selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;http://localhost:1313/articles/virtualbox-in-debian/Selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_cc5d6cf389594644ea605ad4cccd1679.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;450&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;Selection_037.png&#34; alt=&#34;alt text&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Instalación de Docker en Linux</title>
