@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/course_3182/virtualbox-in-debian/</loc>
+    <loc>http://localhost:1313/course-3182/virtualbox-in-debian/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/course_3182/virtualbox-create-vm-first/</loc>
+    <loc>http://localhost:1313/course-3182/virtualbox-create-vm-first/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -18,7 +18,7 @@
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/course_3182/</loc>
+    <loc>http://localhost:1313/course-3182/</loc>
     <lastmod>2025-07-10T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
