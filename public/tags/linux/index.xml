@@ -41,10 +41,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;revisión linux instalado en el sistema&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_1cc9c94a671377e3603b5cf8abfbe1bb.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_dbbdcdd5ca98cd7d1878356e084408da.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_b093e46ac8091684a560994a664055c3.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_3cb2b6715534e0cc9c9659c861ae7661.webp 760w,
                /course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_1cc9c94a671377e3603b5cf8abfbe1bb.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_027_hua0283e12c8c6f1b6489f6e251dd88f57_31255_b093e46ac8091684a560994a664055c3.webp&#34;
                width=&#34;760&#34;
                height=&#34;139&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -71,10 +71,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;URL download Virtualbox&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_902496ab9647c958927fcdb806d6d284.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_aad283cc2b5bb89254f0ca94771b08a7.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_019f08c3e82683fb02ca8251a8bd19be.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_8320d1f4529c861f6a9dcf881acc94ce.webp 760w,
                /course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_902496ab9647c958927fcdb806d6d284.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_028_hu8723938657310d6df33dd523cb24e94c_272963_019f08c3e82683fb02ca8251a8bd19be.webp&#34;
                width=&#34;760&#34;
                height=&#34;423&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -100,10 +100,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;wget virtualbox .deb&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_aafeb8db5b707a704493bb7299ac7e12.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_c224608850a80e04efb62d222fc62ff9.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_48a866a153624c763764aeaacd3fef51.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_d9b6b5c84d5e91ea03f7651206b725f7.webp 760w,
                /course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_aafeb8db5b707a704493bb7299ac7e12.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_029_hue629373620392d497ff5c7ca0f233fa6_56396_48a866a153624c763764aeaacd3fef51.webp&#34;
                width=&#34;760&#34;
                height=&#34;305&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -129,10 +129,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;instalar virtualbox (CLI &amp;amp;raquo; dpkg)&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_68a897df957abebc914e06b09b74a567.webp 400w,
-               /course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_6209d84db2812d1840f5d27ace9c77ef.webp 760w,
+               /course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_4725d012d9f2dc7614a28a9ab1ce283d.webp 400w,
+               /course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_08569648636c1bb57ed10f40fecb7c38.webp 760w,
                /course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_68a897df957abebc914e06b09b74a567.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/virtualbox-install_hu38bb6a04c364bc93078a76a8f694db3a_121478_4725d012d9f2dc7614a28a9ab1ce283d.webp&#34;
                width=&#34;760&#34;
                height=&#34;478&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -158,10 +158,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;$USER al grupo vboxusers&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_0b3ac2bcd8e5d9611097718d6e76f447.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_4e3f64b6d39b7bae0303768887f30026.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_e8c1c5163eaa64cb54edda0cf566538d.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_30aa9136875e2d5525ba2fa6bb122a20.webp 760w,
                /course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_0b3ac2bcd8e5d9611097718d6e76f447.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_031_hu25be7fd04a66a64126ab5ade9a79ef2f_8226_e8c1c5163eaa64cb54edda0cf566538d.webp&#34;
                width=&#34;760&#34;
                height=&#34;58&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -188,10 +188,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Descargar VirtualBox Extension Pack - (CLI)&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_2f12d6ad08e7f9483a939f2ddd2b7ae2.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_047026a9ea7b47d42c530f3f2319b063.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_38e89668bab80cb77eb4926e6b04bec1.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_48b358afaa3bace29dc61a555f3495e5.webp 760w,
                /course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_2f12d6ad08e7f9483a939f2ddd2b7ae2.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_033_hub1af00f9b4c295399d352aa80aacf5cc_203244_38e89668bab80cb77eb4926e6b04bec1.webp&#34;
                width=&#34;760&#34;
                height=&#34;415&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -217,10 +217,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Abrir/cargar instalador Vbox. Ext. P.&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_f8cecf16e970ee2e82ab0855aacba2fa.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_0777722ec13022bb1f00271de7fdf7af.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_7170d49df4af13491374c011b594899e.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_8829c39295b3967888c42e00d550a017.webp 760w,
                /course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_f8cecf16e970ee2e82ab0855aacba2fa.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_036_hud39d881cfe43df6cf312605faa67dd76_61126_7170d49df4af13491374c011b594899e.webp&#34;
                width=&#34;760&#34;
                height=&#34;450&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -245,10 +245,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Instalación de Vbox. Ext. P.&#34; srcset=&#34;
-               /course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_0216cf85d2b8b6ed46b955a57875f993.webp 400w,
-               /course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_8a800636ad177d33785eab270ef9fed5.webp 760w,
+               /course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_2ce6db5d08f2b8fca84688d5399f6999.webp 400w,
+               /course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_41c1f1be2f3ecf9261b6cd52eedddbb0.webp 760w,
                /course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_1200x1200_fit_q80_h2_lanczos_3.webp 1200w&#34;
-               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_0216cf85d2b8b6ed46b955a57875f993.webp&#34;
+               src=&#34;http://localhost:1313/course_3182/virtualbox-in-debian/selection_035_hu3ebf8538b048e750be1db4dfa94e156c_62565_2ce6db5d08f2b8fca84688d5399f6999.webp&#34;
                width=&#34;760&#34;
                height=&#34;449&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
