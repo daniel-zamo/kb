@@ -40,11 +40,11 @@ Instalación de Virtualbox en Debian 12 (y/o derivado)
 
 ## Instalación VirtualBox Extension Pack (opcional)
 
-### Descarga
+### Descarga de VBox Ext P
 
 ![Descargar VirtualBox Extension Pack - (CLI)](selection_033.png)
 
-### Instalación
+### Instalación de VBox Ext P
 
 ![Abrir/cargar instalador Vbox. Ext. P.](selection_036.png)
 
