@@ -31,6 +31,6 @@ main:
 #  - name: Teaching
 #    url: teaching/
 #    weight: 40
-  - name: Artículos
-    url: articles/
+  - name: Curso 3182
+    url: course_3182/
     weight: 50
