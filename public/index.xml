@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>Creación VM ubuntu 20.04LTS</title>
+      <link>http://localhost:1313/course_3182/virtualbox-create-vm-first/</link>
+      <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/course_3182/virtualbox-create-vm-first/</guid>
+      <description>&lt;p&gt;Creación de VM para Ubuntu 20.04 LTS&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Virtualbox en Debian 12</title>
       <link>http://localhost:1313/course_3182/virtualbox-in-debian/</link>
       <pubDate>Thu, 10 Jul 2025 00:00:00 +0000</pubDate>
@@ -547,7 +556,7 @@
 
 
 
-&lt;div id=&#34;chart-764139582&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-354196872&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -565,7 +574,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-764139582&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-354196872&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();

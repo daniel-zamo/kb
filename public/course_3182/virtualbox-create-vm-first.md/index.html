@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Creación de una VM en VirtualBox" />
+  <meta name="description" content="Virtualbox en Debian 12, o superior y/o derivado (Ubuntu, Linux Mint, etc)" />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/course_3182/virtualbox-crear-vm/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/course_3182/virtualbox-create-vm-first.md/" />
 
   
   
@@ -161,7 +161,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="http://localhost:1313/course_3182/virtualbox-crear-vm/" />
+  <link rel="canonical" href="http://localhost:1313/course_3182/virtualbox-create-vm-first.md/" />
 
   
   
@@ -187,9 +187,9 @@
     <meta property="twitter:creator" content="@GetResearchDev" />
   
   <meta property="og:site_name" content="" />
-  <meta property="og:url" content="http://localhost:1313/course_3182/virtualbox-crear-vm/" />
-  <meta property="og:title" content="Virtualbox creación de una primera VM | " />
-  <meta property="og:description" content="Creación de una VM en VirtualBox" /><meta property="og:image" content="http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="http://localhost:1313/course_3182/virtualbox-create-vm-first.md/" />
+  <meta property="og:title" content="Virtualbox en Debian 12 | " />
+  <meta property="og:description" content="Virtualbox en Debian 12, o superior y/o derivado (Ubuntu, Linux Mint, etc)" /><meta property="og:image" content="http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="http://localhost:1313/media/icon_hu68170e94a17a2a43d6dcb45cf0e8e589_3079_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -208,7 +208,7 @@
   
 
 
-  <title>Virtualbox creación de una primera VM | </title>
+  <title>Virtualbox en Debian 12 | </title>
 
   
   
@@ -860,10 +860,30 @@
         <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
-    href="/course_3182/virtualbox-crear-vm/"
+    href="/course_3182/virtualbox-create-vm-first.md/"
     
-  >Virtualbox creación de una primera VM
+  >Virtualbox en Debian 12
     </a>
+  
+    <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#revisi%c3%b3n-versi%c3%b3n-linux-instalado"
+                class="hb-docs-link"
+              >Revisión versión Linux instalado</a>
+            </li>
+          <li>
+              <a
+                href="#instalaci%c3%b3n-configuci%c3%b3n-m%c3%adnima-inicial-de-virtualbox"
+                class="hb-docs-link"
+              >Instalación (configución mínima inicial) de VirtualBox</a>
+            </li>
+          <li>
+              <a
+                href="#instalaci%c3%b3n-virtualbox-extension-pack-opcional"
+                class="hb-docs-link"
+              >Instalación VirtualBox Extension Pack (opcional)</a>
+            </li>
+          </ul>
   
               
             </li><li class="flex flex-col "><a
@@ -1100,9 +1120,9 @@
         <li class="open"><a
     class="hb-sidebar-custom-link
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
-    href="/course_3182/virtualbox-crear-vm/"
+    href="/course_3182/virtualbox-create-vm-first.md/"
     
-  >Virtualbox creación de una primera VM
+  >Virtualbox en Debian 12
     </a></li>
         <li class=""><a
     class="hb-sidebar-custom-link
@@ -1131,7 +1151,34 @@
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#revisi%c3%b3n-versi%c3%b3n-linux-instalado">Revisión versión Linux instalado</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#instalaci%c3%b3n-configuci%c3%b3n-m%c3%adnima-inicial-de-virtualbox">Instalación (configución mínima inicial) de VirtualBox</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#visitar-p%c3%a1gina-descarga-de-virtualbox">Visitar página descarga de Virtualbox</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#descarga-de-virtualbox-desde-el-cli">Descarga de Virtualbox (desde el CLI)</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#instalaci%c3%b3n-de-virtualbox-desde-el-cli">Instalación de Virtualbox (desde el CLI)</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#usermod-vboxusers-user">usermod vboxusers $USER</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#instalaci%c3%b3n-virtualbox-extension-pack-opcional">Instalación VirtualBox Extension Pack (opcional)</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#descarga">Descarga</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#instalaci%c3%b3n">Instalación</a>
+      </li></ul>
 
   
   
@@ -1165,18 +1212,195 @@
         <div class="mt-1.5 flex items-center gap-1 overflow-hidden text-sm text-gray-500 dark:text-gray-400">
       <div class="whitespace-nowrap transition-colors min-w-[24px] overflow-hidden text-ellipsis hover:text-gray-900 dark:hover:text-gray-100">
         <a href="http://localhost:1313/course_3182/">Curso 3182</a>
-      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Virtualbox creación de una primera VM</div>
+      </div><svg class="w-3.5 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.25 4.5l7.5 7.5l-7.5 7.5"/></svg><div class="whitespace-nowrap font-medium text-gray-700 dark:text-gray-100">Virtualbox en Debian 12</div>
 </div>
 
       </div>
       
 
       <div class="content text-base">
-        <h1>Virtualbox creación de una primera VM</h1>
-        <p>Creación de una primera VM en VirtualBox, para Ubuntu 20.04LTS</p>
+        <h1>Virtualbox en Debian 12</h1>
+        <p>Instalación de Virtualbox en Debian 12 (y/o derivado)</p>
 <blockquote>
-<p>En este caso de uso/práctica se crea una primera VM donde se instalará Ubuntu 20.04 LTS, según requerimiento solicitado</p>
+<p>En este caso de uso se instala VirtualBox sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (ejemplo Ubuntu, Linux Mint, Q4os).</p>
 </blockquote>
+<h2 id="revisión-versión-linux-instalado">Revisión versión Linux instalado</h2>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_027.png" alt="revisión linux instalado en el sistema" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="instalación-configución-mínima-inicial-de-virtualbox">Instalación (configución mínima inicial) de VirtualBox</h2>
+<h3 id="visitar-página-descarga-de-virtualbox">Visitar página descarga de Virtualbox</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_028.png" alt="URL download Virtualbox" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="descarga-de-virtualbox-desde-el-cli">Descarga de Virtualbox (desde el CLI)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_029.png" alt="wget virtualbox .deb" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="instalación-de-virtualbox-desde-el-cli">Instalación de Virtualbox (desde el CLI)</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="virtualbox-install.png" alt="instalar virtualbox (CLI &amp;raquo; dpkg)" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="usermod-vboxusers-user">usermod vboxusers $USER</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_031.png" alt="$USER al grupo vboxusers" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="instalación-virtualbox-extension-pack-opcional">Instalación VirtualBox Extension Pack (opcional)</h2>
+<h3 id="descarga">Descarga</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_033.png" alt="Descargar VirtualBox Extension Pack - (CLI)" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="instalación">Instalación</h3>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_036.png" alt="Abrir/cargar instalador Vbox. Ext. P." loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="flex justify-center	">
+    <div class="w-100" ><img src="selection_035.png" alt="Instalación de Vbox. Ext. P." loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
 
       </div>
 
