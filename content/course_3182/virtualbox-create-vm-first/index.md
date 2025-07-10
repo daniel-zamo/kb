@@ -10,6 +10,7 @@ tags:
   - Virtualbox
 #image:
 #  caption: 'Virtualbox'
+weight: 30
 ---
 
 Creación de VM para Ubuntu 20.04 LTS
