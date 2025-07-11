@@ -1,6 +1,6 @@
 ---
-title: "Crear una Máquina Virtual con Virtualbox"
-summary: "Guía paso a paso para crear tu primera máquina virtual en Virtualbox sobre Debian."
+title: "VirtualBox - crear VM (Parte II)"
+summary: "Guía paso a paso para provisionar una máquina virtual en Virtualbox (sobre Debian)."
 date: 2025-07-11
 type: docs
 tags:

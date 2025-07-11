@@ -1,5 +1,5 @@
 ---
-title: Instalar Virtualbox en Debian 12
+title: VirtualBox - instalación en Debian 12 (Parte I)
 summary: Virtualbox en Debian 12, o superior y/o derivado (Ubuntu, Linux Mint, etc)
 date: 2025-07-10
 type: docs
