@@ -1,5 +1,5 @@
 ---
-title: Crear una VM en VirtulBox
+title: Crear una VM en VirtualBox
 summary: Creación de una VM 
 date: 2025-07-11
 type: docs
@@ -8,8 +8,8 @@ tags:
   - Linux
   - Virtualización
   - VirtualBox
-#image:
-#  caption: 'Virtualbox'
+image:
+  caption: 'Virtualbox'
 weight: 20
 ---
 
