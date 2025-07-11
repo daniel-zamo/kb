@@ -8,8 +8,8 @@ tags:
   - Linux
   - Virtualización
   - VirtualBox
-image:
-  caption: 'Virtualbox'
+#image:
+#  caption: 'Virtualbox'
 weight: 20
 ---
 
