@@ -9,8 +9,8 @@ tags:
   - VM
 
 # Opcional: añade una imagen destacada
-# image:
-#   caption: 'Creando una VM'
+image:
+  caption: 'Creando una VM'
 #   # Coloca una imagen 'featured.png' o 'featured.jpg' en esta misma carpeta
 #   # y Blox la usará automáticamente.
 weight: 20
