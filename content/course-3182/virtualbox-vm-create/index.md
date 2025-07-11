@@ -16,10 +16,26 @@ image:
 weight: 20
 ---
 
-## Título de tu nuevo artículo
+Creación de VM sobre VirtualBox
 
-Aquí va todo el contenido de tu nuevo artículo, escrito en Markdown.
+## Creando una VM
 
-Puedes añadir imágenes de la misma forma que en el otro artículo:
-1.  Copia los archivos de imagen a la carpeta `content/course-3182/virtualbox-vm-create/`.
-2.  Enlázalas en tu Markdown así: `![Texto alternativo para la imagen](nombre-de-la-imagen.png)`
+![Paso 1 asistente creación VM](selection_037.png)
+
+### Hardware
+
+![Hardware > memoria](selection_038.png)
+
+### Virtual Hard disk
+
+![Tamaño del disco](selection_039.png)
+
+### Finnish (crear VM)
+
+![Crear la VM](selection_040.png)
+
+### Máquina virtual creada
+
+La máquina ha sido creada. En este punto la VM esta creada, pero no tiene instalado sistema operativo, es decir hasta aquí para la VM ha quedado definido o 'provisionado' el recurso.
+
+![VM creada](selection_041.png)
