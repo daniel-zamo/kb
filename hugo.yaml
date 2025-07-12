@@ -1,8 +1,7 @@
 # Fichero de configuración principal de Hugo en formato YAML
-
 baseURL: 'https://daniel-zamo.github.io/'
 languageCode: 'es-es'
-title: 'Mi notas en la Web'
+title: 'Notas en la Web'
 theme: "hugo-theme-stack"
 copyright: ""
 
@@ -34,7 +33,7 @@ params:
 
   # Configuración de la barra lateral (Sidebar)
   sidebar:
-    subtitle: "Un blog de mis notas Markdown"
+    subtitle: "Mis notas Markdown"
     avatar:
       src: "/images/avatar.png"
       alt: "Mi avatar"

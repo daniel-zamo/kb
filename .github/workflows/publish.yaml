@@ -37,13 +37,25 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
+          #      - name: Build with Hugo
+          #        env:
+          #          # Esta variable asegura que Hugo construya el sitio para producción
+          #          HUGO_ENVIRONMENT: production
+          #        run: |
+          #          # El comando 'hugo' por sí solo es suficiente. La baseURL se gestiona automáticamente
+          #          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+
       - name: Build with Hugo
         env:
-          # Esta variable asegura que Hugo construya el sitio para producción
           HUGO_ENVIRONMENT: production
         run: |
-          # El comando 'hugo' por sí solo es suficiente. La baseURL se gestiona automáticamente
-          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          # Usa la baseURL definida en hugo.yaml
+          hugo --minify
+
+
+
+
+
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
