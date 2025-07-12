@@ -1,0 +1,15 @@
+// =================================================================
+//  PROPUESTA DE AJUSTE VISUAL PARA EL MENÚ LATERAL
+// =================================================================
+
+.menu li a {
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+
+    display: flex;
+    align-items: center;
+
+    .icon {
+      margin-right: 0.02rem;
+    }
+}

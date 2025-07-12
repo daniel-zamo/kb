@@ -1,0 +1,33 @@
+// =================================================================
+//  PROPUESTA DE AJUSTE VISUAL PARA EL MENÚ LATERAL
+// =================================================================
+
+.menu li a {
+    // --- 1. Reducción del espaciado vertical (Padding) ---
+    // Este es el ajuste principal. Reducimos el espacio arriba y abajo.
+    // Un valor entre 0.3rem y 0.4rem suele funcionar bien.
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+
+    // --- 2. Ajuste sutil del tamaño de la fuente ---
+    // A veces, reducir ligeramente la fuente ayuda a que todo se vea más compacto
+    // sin perder legibilidad. El valor por defecto es 1rem.
+    // Prueba con 0.95rem o 0.9rem.
+//    font-size: 0.95rem;
+
+    // --- 3. Asegurar la alineación vertical perfecta (Clave) ---
+    // En lugar de forzar una altura (`height`), nos aseguramos de que
+    // los elementos dentro del enlace (ícono y texto) estén centrados verticalmente.
+    display: flex;
+    align-items: center;
+
+    // --- 4. Controlar el espacio entre el ícono y el texto ---
+    // El ícono (`svg`) y el texto (`span`) están dentro del enlace.
+    // Podemos controlar el espacio entre ellos con `gap` o `margin`.
+    // La clase del ícono es .icon
+    .icon {
+        // Añadimos un pequeño margen a la derecha del ícono para que
+        // no quede pegado al texto. Ajusta este valor a tu gusto.
+//        margin-right: 0.1rem; // El valor por defecto puede ser mayor.
+    }
+}
