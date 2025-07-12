@@ -1,6 +1,7 @@
 # README.md
 
-## Puesta en Marcha y Solución de Problemas - Sitio con Hugo Blox
+
+## [2025-07-13 se ha migrado a theme Spark] Puesta en Marcha y Solución de Problemas - Sitio con Hugo Blox
 
 Este documento detalla los pasos para configurar y levantar el entorno de desarrollo local para este sitio web, basado en Hugo y el framework Hugo Blox (anteriormente Wowchemy).
 

@@ -2,7 +2,7 @@
 
 baseURL: 'https://daniel-zamo.github.io/'
 languageCode: 'es-es'
-title: 'Mi blog'
+title: 'Mi notas en la Web'
 theme: "hugo-theme-stack"
 copyright: ""
 
@@ -81,8 +81,8 @@ menu:
 
     social:
         - identifier: github
-          name: GitHub danielzamo
-          url: https://github.com/danielzamo
+          name: GitHub daniel-zamo
+          url: https://github.com/danieli-zamo
           params:
               icon: brand-github
 
