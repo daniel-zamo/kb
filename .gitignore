@@ -1,0 +1,48 @@
+# --- Hugo Generated Files ---
+# Ignorar el directorio de salida del sitio web. Es generado por Hugo.
+# ¡NUNCA subas este directorio al repositorio principal!
+/public/
+
+# Ignorar los recursos generados por Hugo (imágenes procesadas, caché de SASS/CSS, etc.)
+# Se pueden regenerar en cualquier momento.
+/resources/
+
+# Fichero de bloqueo de compilación de Hugo
+.hugo_build.lock
+
+
+# --- User-specific Exclusions ---
+# Ignorar el directorio de borradores y notas personales, como se solicitó.
+/dz_drafts/
+
+
+# --- Theme / Submodules ---
+# No es necesario añadir el directorio del tema aquí porque está gestionado
+# como un submódulo de Git a través del fichero .gitmodules. Git ya sabe
+# que no debe rastrear sus archivos internos.
+
+
+# --- OS & Editor Specific Files ---
+# Ficheros de sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ficheros de editores y entornos de desarrollo (IDE)
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ficheros de logs y de entorno
+*.log
+.env
+.env.*
+!.env.example
+
+
+# --- Node.js Dependencies (opcional, pero buena práctica) ---
+# Si en algún momento utilizas npm/yarn para herramientas de frontend.
+/node_modules/
+package-lock.json
+yarn.lock
