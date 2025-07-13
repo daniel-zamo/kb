@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Tags on Mi blog</title>
+        <title>Tags on Notas en la Web</title>
         <link>http://localhost:1313/tags/</link>
-        <description>Recent content in Tags on Mi blog</description>
+        <description>Recent content in Tags on Notas en la Web</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>es-es</language>
-        <lastBuildDate>Fri, 27 Oct 2023 11:00:00 -0300</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux</title>
+        <link>http://localhost:1313/tags/linux/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/linux/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>LPIC-101</title>
+        <link>http://localhost:1313/tags/lpic-101/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/lpic-101/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>LPIC-102</title>
+        <link>http://localhost:1313/tags/lpic-102/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/lpic-102/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Cursos</title>
         <link>http://localhost:1313/tags/cursos/</link>
         <pubDate>Fri, 27 Oct 2023 11:00:00 -0300</pubDate>
         
         <guid>http://localhost:1313/tags/cursos/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Linux</title>
-        <link>http://localhost:1313/tags/linux/</link>
-        <pubDate>Fri, 27 Oct 2023 11:00:00 -0300</pubDate>
-        
-        <guid>http://localhost:1313/tags/linux/</guid>
         <description></description>
         </item>
         <item>

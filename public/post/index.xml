@@ -1,12 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Post on Mi blog</title>
+        <title>Post on Notas en la Web</title>
         <link>http://localhost:1313/post/</link>
-        <description>Recent content in Post on Mi blog</description>
+        <description>Recent content in Post on Notas en la Web</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>es-es</language>
-        <lastBuildDate>Fri, 27 Oct 2023 11:00:00 -0300</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Linux CLI - gestión básica de archivos</title>
+        <link>http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/</link>
+        <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/</guid>
+        <description>&lt;img src="http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/ls-check-file-type.png" alt="Featured image of post Linux CLI - gestión básica de archivos" /&gt;&lt;p&gt;¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios es una de las tareas ideales para principiantes.&lt;/p&gt;
+&lt;h2 id=&#34;gestión-básica-de-archivos&#34;&gt;Gestión básica de archivos
+&lt;/h2&gt;&lt;p&gt;En Linux, todo se maneja como un archivo, por lo que dominar su manipulación es fundamental. Esta entrada enumera operaciones básicas (navegación, copia y eliminación) y comandos clave de gestión. Los archivos almacenan datos y programas, con contenido y metadatos (tamaño, permisos), organizados en directorios, que también son archivos contenedores.&lt;/p&gt;
+&lt;p&gt;Es para un estudiante o profesional de IT que desee trabajar con este tipo de tecnología, basada en Linux o sistemas operativos tipo Unix, tener un dominio de dominio de la CLI del sistema operativo, principalmente en tareas de:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Copiar, mover y eliminar archivos y directorios individualmente.&lt;/li&gt;
+&lt;li&gt;Copiar múltiples archivos y directorios de forma recursiva.&lt;/li&gt;
+&lt;li&gt;Eliminar archivos y directorios de forma recursiva.&lt;/li&gt;
+&lt;li&gt;Usar patrones simples y avanzados con &lt;em&gt;wilcard&lt;/em&gt; (comodines) en comandos.&lt;/li&gt;
+&lt;li&gt;Usar &lt;code&gt;find&lt;/code&gt; para localizar y actuar sobre archivos según tipo, tamaño o fecha.&lt;/li&gt;
+&lt;li&gt;Uso de &lt;code&gt;tar&lt;/code&gt;, &lt;code&gt;cpio&lt;/code&gt; y &lt;code&gt;dd&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para la introducción, practica y/o estudio se pueden utilizar los siguientes link de referencias. Estos son algunos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;LPI Learning - &lt;a class=&#34;link&#34; href=&#34;https://learning.lpi.org/en/learning-materials/010-160/5/5.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;5.3 Managing File Permissions and Ownership&lt;/a&gt; &amp;gt; &lt;a class=&#34;link&#34; href=&#34;https://learning.lpi.org/en/learning-materials/010-160/5/5.3/5.3_01/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;5.3&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LPI Learning - &lt;a class=&#34;link&#34; href=&#34;https://learning.lpi.org/en/learning-materials/101-500/103/103.3/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;103.3 Perform basic file management&lt;/a&gt; &amp;gt; &lt;a class=&#34;link&#34; href=&#34;https://learning.lpi.org/en/learning-materials/101-500/103/103.3/103.3_01/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Lesson 1&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+        </item>
+        <item>
         <title>Creando tu Primera Máquina Virtual (VM) en VirtualBox</title>
         <link>http://localhost:1313/p/creando-tu-primera-m%C3%A1quina-virtual-vm-en-virtualbox/</link>
         <pubDate>Fri, 27 Oct 2023 11:00:00 -0300</pubDate>

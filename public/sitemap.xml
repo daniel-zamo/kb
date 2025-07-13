@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/curso-3182/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/linux-cli/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lpic-101/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/lpic-102/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/creando-tu-primera-m%C3%A1quina-virtual-vm-en-virtualbox/</loc>
     <lastmod>2023-10-27T11:00:00-03:00</lastmod>
@@ -11,22 +38,7 @@
     <loc>http://localhost:1313/categories/course-3182/</loc>
     <lastmod>2023-10-27T11:00:00-03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/curso-3182/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/cursos/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2023-10-27T11:00:00-03:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2023-10-27T11:00:00-03:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/virtualbox/</loc>
