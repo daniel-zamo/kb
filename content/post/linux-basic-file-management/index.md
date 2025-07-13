@@ -10,6 +10,7 @@ tags:
 categories:
     - "course-3182"
     - "curso-3182"
+    - "linux-cli"
 image: "ls-check-file-type.png"
 ---
 
@@ -36,7 +37,8 @@ Para la introducción, práctica y/o estudio se pueden utilizar los siguientes l
 
 ## Sesion de trabajo con el CLI de Linux
 
-### Ver que tipo de archivo es? (comando ls -l)
+### Ver que tipo de archivo es? - (uso comando ls -l)
+
 ![ls -l listar e identificar que tipo de archivo se trata](ls-check-file-type.png)
 
 En la captura anterior se muestra la salida del comando `ls -al` (comando _list_ - de _listar_). En la misma se muestra la ejecución de:
