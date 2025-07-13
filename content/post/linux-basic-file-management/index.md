@@ -20,8 +20,9 @@ image = "ls-check-file-type.png"
 ¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que pretenda trabajar con esta tecnología.
 <!--more-->
 
-> En Linux, todo se maneja como un archivo, por lo que dominar su manipulación es fundamental. En esta entrada se enumeran algunos link de documentación pública que LPIC comparte en su sitio oficial, para preparación de sus certificaciones para la tecnología Linux. 
+<!-- > En Linux, todo se maneja como un archivo, por lo que dominar su manipulación es fundamental. En esta entrada se enumeran algunos link de documentación pública que LPIC comparte en su sitio oficial, para preparación de sus certificaciones para la tecnología Linux. 
 > También se muestra la ejecucion del comando `ls`, para mostrar o tener un primer contacto de como trabajar con el CLI de un sistema tipo Unix y/o CLI de Linux, listando como se puede revisar de que tipo de archivo se encuentran en la ruta (`$PWD`) actual del usuario que lo ejecuta.
+-->
 
 ## Gestión básica de archivos
 
