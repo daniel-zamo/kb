@@ -46,12 +46,16 @@ Para la introducción, práctica y/o estudio se pueden utilizar los siguientes l
 ## Sesion de trabajo con el CLI de Linux
 
 ### Ver que tipo de archivo es? (comando ls -l)
-En la captura siguiente se muestra la salida del comando `ls` (comando list - de listar). En la misma se muestra la ejecución de:
+![ls -l listar e identificar que tipo de archivo se trata](ls-check-file-type.png)
+
+En la captura anterior se muestra la salida del comando `ls -al` (comando _list_ - de _listar_). En la misma se muestra la ejecución de:
 
 ```bash
-ls -al
-# o su equivalente
 ls -a -l
+# o su equivalente
+ls -al
+# o también equivalente
+ls --all -l
 ```
 
 _Donde:_
@@ -65,5 +69,20 @@ En la captura se puede ver como es la salida del comando y que significa cada fl
 
 _Importante:_ en la captura se enfatiza cual es el _flag_ para el tipo de archivo que se trata, indicar que estos no son los únicos tipos que tiene un archivo (directorio, archivo, enlace, bloque, etc), en Linux (como en todos los sistemas Unix) hay muchos otros _tipos de ficheros_ posibles.
 
-![ls -l listar e identificar que tipo de archivo se trata](ls-check-file-type.png)
+
+
+_Recomendación de buenas prácticas:_
+
+El ejecutar el comando `ls -al` es idéntica ejecución a realizarlo por ejemplo del modo `ls --all -l`, la primera forma se le llama modo _resumido_ vs a la segunda que es el modo _largo_, el usuario puede ejecutarlo de cualquiera de los modos, pero como buena práctica y si se esta comenzando a utilizar comandos desde el CLI, si se recomienda acostumbrarse a las ejecuciones siempres hacerlas de una misma dinámica y/o nomenclatura. Por ejemplo todas las siguientes son equivalentes a la ejecución anterior:
+
+```bash
+ls -al
+ls -la ./
+ls ./ -al
+ls ./ --all -l
+ls -l -a .
+#...etc
+```
+
+Pero pensar en cuando el set de comandos a utilizar es mas amplio es para menos fricción mental y mas coherencia en como se utilizan los comandos _como que de nuestras herramientas son para las tareas sobre el sistema_ es buena práctica utilizar un solo coherente modo, pues hay comandos que pueden comportarse de diferentes modos.
 
