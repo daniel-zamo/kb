@@ -1,6 +1,6 @@
 ---
 title: "Creando tu Primera Máquina Virtual (VM) en VirtualBox"
-date: 2023-10-27T11:00:00-03:00
+date: 2025-07-12T11:00:00-03:00
 description: "Un tutorial paso a paso sobre cómo crear y provisionar el hardware para una nueva máquina virtual utilizando VirtualBox."
 tags:
     - "linux"

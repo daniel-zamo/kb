@@ -1,6 +1,6 @@
 ---
 title: "Guía de Instalación de VirtualBox en Debian 12"
-date: 2023-10-27T10:00:00-03:00
+date: 2023-07-10T10:00:00-03:00
 description: "Aprende a instalar VirtualBox y su Extension Pack en Debian 12 y derivados paso a paso desde la línea de comandos."
 tags:
     - "linux"
