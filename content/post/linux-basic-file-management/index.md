@@ -1,29 +1,21 @@
-+++
-author = "dz"
-title = "Linux CLI - gestión básica de archivos"
-#date = "2025-07-13"
-date = 2025-07-14T00:00:00-03:00
-description = "Gestión básica de archivos, link de referencia/estudio; tipos de archivos"
-tags = [
-    "LPIC-102",
-    "LPIC-101",
-    "linux",
-]
-categories = [
-    "linux-cli",
-    "curso-3182",
-]
-series = ["Linux CLI introducción"]
-#aliases = [""]
-image = "ls-check-file-type.png"
-+++
+---
+title: "Gestión básica de archivos; Ver con ls que tipos de archivos son"
+date: 2025-07-13T22:00:00-03:00
+description: "Gestión básica de archivos, link de referencia/estudio; Ver que tipos de archivos son."
+tags:
+    - "LPIC-102"
+    - "LPIC-101"
+    - "linux"
+categories:
+    - "course-3182"
+    - "curso-3182"
+    - "linux-cli"
+# 'featured' o 'image' suelen ser los parámetros para la imagen destacada.
+# Spark es muy simple, puede que no la use, pero es buena práctica tenerla.
+image: "ls-check-file-type.png"
+---
 
-¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que pretenda trabajar con esta tecnología.
-<!--more-->
-
-<!-- > En Linux, todo se maneja como un archivo, por lo que dominar su manipulación es fundamental. En esta entrada se enumeran algunos link de documentación pública que LPIC comparte en su sitio oficial, para preparación de sus certificaciones para la tecnología Linux. 
-> También se muestra la ejecucion del comando `ls`, para mostrar o tener un primer contacto de como trabajar con el CLI de un sistema tipo Unix y/o CLI de Linux, listando como se puede revisar de que tipo de archivo se encuentran en la ruta (`$PWD`) actual del usuario que lo ejecuta.
--->
+¡En Linux, todo/s es/son archivo/s! <!--more-->Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que guste trabajar con esta tecnología.
 
 ## Gestión básica de archivos
 
