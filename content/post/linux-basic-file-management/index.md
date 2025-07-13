@@ -17,7 +17,7 @@ series = ["Linux CLI introducción"]
 image = "ls-check-file-type.png"
 +++
 
-¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios es una de las tareas ideales para principiantes.
+¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que pretenda trabajar con esta tecnología.
 <!--more-->
 
 ## Gestión básica de archivos

@@ -12,7 +12,7 @@
         <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/</guid>
-        <description>&lt;img src="http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/ls-check-file-type.png" alt="Featured image of post Linux CLI - gestión básica de archivos" /&gt;&lt;p&gt;¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios es una de las tareas ideales para principiantes.&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/p/linux-cli-gesti%C3%B3n-b%C3%A1sica-de-archivos/ls-check-file-type.png" alt="Featured image of post Linux CLI - gestión básica de archivos" /&gt;&lt;p&gt;¡En Linux, todo es un archivo! Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que pretenda trabajar con esta tecnología.&lt;/p&gt;
 &lt;h2 id=&#34;gestión-básica-de-archivos&#34;&gt;Gestión básica de archivos
 &lt;/h2&gt;&lt;p&gt;En Linux, todo se maneja como un archivo, por lo que dominar su manipulación es fundamental. Esta entrada enumera operaciones básicas (navegación, copia y eliminación) y comandos clave de gestión. Los archivos almacenan datos y programas, con contenido y metadatos (tamaño, permisos), organizados en directorios, que también son archivos contenedores.&lt;/p&gt;
 &lt;p&gt;Es para un estudiante o profesional de IT que desee trabajar con este tipo de tecnología, basada en Linux o sistemas operativos tipo Unix, tener un dominio de dominio de la CLI del sistema operativo, principalmente en tareas de:&lt;/p&gt;
