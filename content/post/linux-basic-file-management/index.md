@@ -1,7 +1,7 @@
 +++
 author = "dz"
 title = "Linux CLI - gestión básica de archivos"
-date = "2025-07-13"
+date = "2025-07-14"
 description = "Gestión básica de archivos, link de referencia/estudio; tipos de archivos"
 tags = [
     "LPIC-102",
