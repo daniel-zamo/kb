@@ -1,21 +1,19 @@
 ---
-title: "Gestión básica de archivos; Ver con ls que tipos de archivos son"
-date: 2025-07-13T22:00:00-03:00
+title: "Gestión básica de archivos; ver con ls que tipos de archivos son"
+date: 2025-07-13T12:00:00-03:00
 description: "Gestión básica de archivos, link de referencia/estudio; Ver que tipos de archivos son."
 tags:
-    - "LPIC-102"
-    - "LPIC-101"
     - "linux"
+    - "virtualización"
+    - "virtualbox"
+    - "cursos"
 categories:
     - "course-3182"
     - "curso-3182"
-    - "linux-cli"
-# 'featured' o 'image' suelen ser los parámetros para la imagen destacada.
-# Spark es muy simple, puede que no la use, pero es buena práctica tenerla.
 image: "ls-check-file-type.png"
 ---
 
-¡En Linux, todo/s es/son archivo/s! <!--more-->Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que guste trabajar con esta tecnología.
+¡En Linux, todos son archivos! <!--more-->Aprender comandos básicos para navegar, copiar y gestionar archivos, que almacenan datos y metadatos en directorios, es una de las tareas fundamentales iniciales para todo profesional que guste trabajar con esta tecnología.
 
 ## Gestión básica de archivos
 
