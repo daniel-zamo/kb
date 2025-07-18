@@ -21,7 +21,7 @@ image: "/images/jekyll.header.avif"
 En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (por ejemplo Ubuntu, Linux Mint, Q4os, etc).
 {{< /note >}}
 
-## Tecnologías utilizadas
+### Tecnologías utilizadas en este caso de uso
 
 <a href="https://www.debian.org/" target="_blank" class="badge-link">
   <img src="https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white" alt="Debian">
