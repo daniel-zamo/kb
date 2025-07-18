@@ -23,12 +23,9 @@ En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo proced
 
 ## Tecnologías utilizadas
 
-[![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)](https://www.debian.org/) | [![Cinnamon](https://img.shields.io/badge/Cinnamon-DC682E?style=flat-square&logo=cinnamon&logoColor=white)](https://cinnamon-spices.linuxmint.com/)
-
 <a href="https://www.debian.org/" target="_blank" class="badge-link">
   <img src="https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white" alt="Debian">
-</a>
-<a href="https://cinnamon-spices.linuxmint.com/" target="_blank" class="badge-link">
+</a> | <a href="https://cinnamon-spices.linuxmint.com/" target="_blank" class="badge-link">
   <img src="https://img.shields.io/badge/Cinnamon-DC682E?style=flat-square&logo=cinnamon&logoColor=white" alt="Cinnamon">
 </a>
 
