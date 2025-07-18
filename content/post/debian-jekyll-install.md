@@ -8,6 +8,7 @@ tags:
     - "site-static-generator"
     - "generadores-sitios-estaticos"
     - "documentación"
+    - "ruby"
 categories:
     - "ssg"
 
@@ -19,3 +20,20 @@ image: "/images/jekyll.header.avif"
 {{< note title="Objetivo" >}}
 En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (por ejemplo Ubuntu, Linux Mint, Q4os, etc).
 {{< /note >}}
+
+## Supuestos cumplidos
+
+- Sistema operativo: Debian 12
+- Desktop/ambiente gráfico: [![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=flat-square&logo=hugo&logoColor=white)](https://gohugo.io/)
+
+## Referencias principales consultadas
+
+## Instalación de dependencias
+
+
+### Instalación de Ruby
+
+```bash
+sudo nala -y update && \
+  sudo nale -y install ruby-full
+```
