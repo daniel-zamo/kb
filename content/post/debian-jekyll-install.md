@@ -21,15 +21,14 @@ image: "/images/jekyll.header.avif"
 En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (por ejemplo Ubuntu, Linux Mint, Q4os, etc).
 {{< /note >}}
 
-## Supuestos cumplidos
+## Tecnologías utilizadas
 
-- Sistema operativo: Debian 12
-- Desktop/ambiente gráfico: [![Hugo](https://img.shields.io/badge/Hugo-FF4088?style=flat-square&logo=hugo&logoColor=white)](https://gohugo.io/)
+- [![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)](https://www.debian.org/)
+- [![Cinnamon](https://img.shields.io/badge/Cinnamon-DC682E?style=flat-square&logo=cinnamon&logoColor=white)](https://cinnamon-spices.linuxmint.com/)
 
 ## Referencias principales consultadas
 
 ## Instalación de dependencias
-
 
 ### Instalación de Ruby
 
