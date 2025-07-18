@@ -1,0 +1,33 @@
+/*
+    You can add your own custom styles here.
+*/
+
+
+.admonition {
+    padding: 1.2rem;
+    margin: 1.5rem 0;
+    border-left: 0.3rem solid #448aff;
+    background-color: rgba(68, 138, 255, 0.1);
+    border-radius: .25rem;
+
+    &.note {
+        border-left-color: #448aff; // Azul para notas
+        background-color: rgba(68, 138, 255, 0.1);
+    }
+
+    // Puedes añadir más estilos aquí si quieres
+    // &.warning {
+    //     border-left-color: #ffc107; // Amarillo para advertencias
+    //     background-color: rgba(255, 193, 7, 0.1);
+    // }
+
+    .admonition-title {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
