@@ -32,6 +32,15 @@
     }
 }
 
-a.links img{
-    border: 0;
+// assets/scss/custom.scss
+.badge-link {
+  // Elimina el subrayado y cualquier borde del enlace
+  text-decoration: none;
+  border: 0;
+  
+  // Efecto sutil al pasar el ratón para indicar que es clickeable
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
 }
