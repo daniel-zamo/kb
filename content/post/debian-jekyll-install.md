@@ -26,8 +26,6 @@ En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo proced
 - [![Debian](https://img.shields.io/badge/Debian-A81D33?style=flat-square&logo=debian&logoColor=white)](https://www.debian.org/)
 - [![Cinnamon](https://img.shields.io/badge/Cinnamon-DC682E?style=flat-square&logo=cinnamon&logoColor=white)](https://cinnamon-spices.linuxmint.com/)
 
-## Referencias principales consultadas
-
 ## Instalación de dependencias
 
 ### Instalación de Ruby
