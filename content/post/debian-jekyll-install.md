@@ -30,6 +30,5 @@ En este caso de uso se instala el SSG Jekyll sobre un Debian 12. El mismo proced
 ### Instalación de Ruby
 
 ```bash
-sudo nala -y update && \
-  sudo nale -y install ruby-full
+sudo nala -y update && sudo nala -y install ruby-full
 ```
