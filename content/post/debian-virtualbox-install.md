@@ -17,43 +17,40 @@ categories:
 image: "/images/virtualbox-install.jpg"
 ---
 
-# Instalación de Virtualbox en Debian 12 (y/o derivado)
-
-
-BETA
+## Instalación de Virtualbox en Debian 12 (y/o derivado)
 
 > En este caso de uso se instala VirtualBox sobre un Debian 12. El mismo procedimiento es identico de realizar en distribuciones superiores y/o derivadas de Debian (ejemplo Ubuntu, Linux Mint, Q4os).
 >
 
-## Revisión versión Linux instalado
+### Revisión versión Linux instalado
 
 ![revisión linux instalado en el sistema](/images/virtualbox/selection_027.png)
 
-## Instalación (configución mínima inicial) de VirtualBox
+### Instalación (configución mínima inicial) de VirtualBox
 
-### Visitar página descarga de Virtualbox
+#### Visitar página descarga de Virtualbox
 
 ![URL download Virtualbox](/images/virtualbox/selection_028.png)
 
-### Descarga de Virtualbox (desde el CLI)
+#### Descarga de Virtualbox (desde el CLI)
 
 ![wget virtualbox .deb](/images/virtualbox/selection_029.png)
 
-### Instalación de Virtualbox (desde el CLI)
+#### Instalación de Virtualbox (desde el CLI)
 
 ![instalar virtualbox (CLI >> dpkg)](/images/virtualbox/virtualbox-install.png)
 
-### usermod vboxusers $USER
+#### usermod vboxusers $USER
 
 ![$USER al grupo vboxusers](/images/virtualbox/selection_031.png)
 
-## Instalación VirtualBox Extension Pack (opcional)
+### Instalación VirtualBox Extension Pack (opcional)
 
-### Descarga de VBox Ext P
+#### Descarga de VBox Ext P
 
 ![Descargar VirtualBox Extension Pack - (CLI)](/images/virtualbox/selection_033.png)
 
-### Instalación de VBox Ext P
+#### Instalación de VBox Ext P
 
 ![Abrir/cargar instalador Vbox. Ext. P.](/images/virtualbox/selection_036.png)
 
