@@ -2,6 +2,7 @@
 title: "Guía de Instalación de Jekyll en Debian (y/o derivado)"
 date: 2025-07-18T10:00:00-03:00
 description: "Instalación del SSG Jekyll en una distribución Linux basada o derivada de Debian 12 (y/o superior)."
+draft: true
 tags:
     - "linux"
     - "markdown"
