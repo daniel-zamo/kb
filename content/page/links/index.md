@@ -21,6 +21,11 @@ links:
     description: Cinnamon es un entorno de escritorio Linux conocido por su interfaz tradicional y fácil de usar, desarrollado inicialmente como una bifurcación de GNOME Shell y ahora ampliamente utilizado como el escritorio predeterminado para Linux Mint.
     website: https://github.com/linuxmint/cinnamon
     image: https://projects.linuxmint.com/icons/projects/cinnamon-logo.svg
+  - title: Starlight - theme
+    description: Starlight es un tema de documentación completo construido sobre el framework Astro.
+    website: https://starlight.astro.build
+    image: https://starlight.astro.build/_astro/hero-star.CRrHICv4_Z1i5bYh.webp
+
 menu:
     main: 
         weight: -50
@@ -30,6 +35,7 @@ menu:
 comments: false
 ---
 
+<!--
 Para usar esta función, añada la sección `links` al `frontmatter` del Markdown.
 
 Formato de `frontmatter` (portada) de de esta página:
@@ -44,5 +50,4 @@ links:
 ```
 
 El campo `image` acepta imágenes tanto locales como externas.
-
-
+-->
