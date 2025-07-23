@@ -7,7 +7,7 @@ tags:
     - "devops"
     - "markdown"
 date: 2025-07-23T10:00:00-03:00
-description: "La documentación como código, o documentos como código, es un enfoque para administrar la documentación que trata los documentos como una base de código. Esto permite la versionar, actualizar automáticamente y revisar documentos como lo haría en una base de código. Docs como código ayuda a asegurarse de que sus documentos estén actualizados y que los usuarios puedan obtener acceso a información precisa."
+description: "La documentación como código, o documentos como código, es un enfoque para administrar la documentación que trata los documentos como si de código se tratase."
 categories:
     - "ssg"
     - "documentación"
@@ -21,6 +21,9 @@ categories:
 
 **Definición**:  
 Tratar la documentación *como código fuente*: markdown + Git + CI/CD.
+
+**Ventajas**:
+Esto permite versionar, actualizar automáticamente y/o revisar documentos como lo haría en una base de código. Docs como código ayuda a asegurarse de que sus documentos estén actualizados y que los usuarios puedan obtener acceso a información precisa.
 
 ## 🔑 5 Pilares Claves
 
