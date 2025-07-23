@@ -2,18 +2,18 @@
 title: "Docs as Code: Conceptos Básicos"
 tags: 
     - "workflow"
-    - "documentation"
     - "best-practices" 
     - "buenas-prácticas" 
     - "devops"
-    - "documentación"
-    - "documentación-técnica"
-    - "Markdown"
+    - "markdown"
 date: 2025-07-23T10:00:00-03:00
 description: "La documentación como código, o documentos como código, es un enfoque para administrar la documentación que trata los documentos como una base de código. Esto permite la versionar, actualizar automáticamente y revisar documentos como lo haría en una base de código. Docs como código ayuda a asegurarse de que sus documentos estén actualizados y que los usuarios puedan obtener acceso a información precisa."
 categories:
+    - "ssg"
+    - "documentación"
     - "documentación-técnica"
-    - "markdown"
+    - "technical-writers"
+
 #image: ""
 ---
 
