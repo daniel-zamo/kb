@@ -10,7 +10,7 @@ tags:
 categories:
     - "ssg"
     - "documentación"
-image: "https://pub-693f7baf8984450ca2a6a42eec72bd69.r2.dev/hugovsastro.webp"
+image: "/images/starlight-header.png"
 ---
 
 Este artículo es la instalación inicial del sitio construido con Astro utilizando el theme Starlight.<!-- more -->
