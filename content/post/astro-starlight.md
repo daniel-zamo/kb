@@ -1,7 +1,8 @@
 ---
-title: "Astro + theme Starlight"
+title: "Desplegando sitio basado en Astro + theme Starlight"
 date: 2025-07-22T10:00:00-03:00
-description: "Starlight es un tema de documentación creado sobre el framework Astro que proporciona un conjunto de características diseñadas específicamente para la creación de documentación técnica."
+description: "Creación de mi sitio Astro basado en el theme Starlight."
+# es un tema de documentación creado sobre el framework Astro que proporciona un conjunto de características diseñadas específicamente para la creación de documentación técnica.
 tags:
     - "ssg"
     - "site-static-generator"
