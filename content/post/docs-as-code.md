@@ -14,7 +14,7 @@ categories:
     - "documentación-técnica"
     - "technical-writers"
 
-#image: ""
+image: "/images/docs-as-code-header.png"
 ---
 
 # 📜 Docs as Code (en 30 segundos)
