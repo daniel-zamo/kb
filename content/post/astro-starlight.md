@@ -10,66 +10,45 @@ tags:
 categories:
     - "ssg"
     - "documentación"
+    - "linux-cli"
 image: "/images/starlight-header.png"
 ---
 
-Este artículo es la instalación inicial del sitio construido con Astro utilizando el theme Starlight.<!-- more -->
-
-
-
-
-, que el autor intentará utilizar para migrar sus notas generadas con Hugo y/o Jekyll a un nuevo sitio
-
-Astro es un framework web para construir sitios web orientados al contenido, como blogs, documentación y sitios de marketing, que se destaca por su rendimiento y experiencia de desarrollador. Starlight es un tema de documentación creado sobre Astro que proporciona un conjunto de características diseñadas específicamente para la creación de documentación técnica, como navegación preconstruida, soporte para tabla de contenido, integración de búsqueda y personalización
+Este artículo es la creación del sitio construido con Astro basado en el theme Starlight.<!-- more -->
 
 ## Referencias principales consultadas
 
-- [](https://starlight.astro.build/es/getting-started/)
+- [Sitio principal del theme](https://starlight.astro.build/es/getting-started/)
 
-## Comenzando
+## Especificación inicial/supuestos cumplidos
 
-> Este caso de uso instala [SyncThingy](https://github.com/zocker-160/SyncThingy) como aplicacion Flatpak.
->
-> Como este sistema (basado en un Debian 12 con Desktop Linux [Cinnamon](https://github.com/linuxmint/cinnamon)) tenía disponible Flatpak, es que se eligio [la versión de zocker-160/SyncThingy](https://github.com/zocker-160/SyncThingy).
->
+- Desktop o CLI de desarrollo/trabajo: Distribución Linux basada en Kernel `6.8.0-63-generic` y/o superior.
+- Git (opcional, pero muy recomendable)
+- nodejs (npm; npx...)
+- Visual Studio Code (opcional)
 
-## ¿Qué es Syncthing?
-
-[SyncThing](https://syncthing.net/) es una aplicación opensource que realiza sincronización continua de archivos entre diferentes sistemas (y/o multiples dispositivos). Opera en una arquitectura peer-to-peer sin necesidad de un servidor central.
-
-## Supuestos cumplidos
-
-- Sistema operativo basado en Debian 12 (superior y/o derivado).
-- Paquetería Flatpak disponible/soportada.
-
-## Instalación de la aplicación basada en Flatpak
-
-Para instalar la aplicación basada en paquetería Flatpak, desde el CLI ejecutar:
+### Verificaciones dependencias (CLI Linux)
 
 ```bash
->$ flatpak --user install com.github.zocker_160.SyncThingy
+dzamo@victus:~/2_Areas$ uname -s -r
+Linux 6.8.0-63-generic
+dzamo@victus:~/2_Areas$ git -v
+git version 2.43.0
+dzamo@victus:~/2_Areas$ node -v
+v22.17.0
+dzamo@victus:~/2_Areas$ npm -v
+11.4.2
+dzamo@victus:~/2_Areas$ npx -v
+11.4.2
+dzamo@victus:~/2_Areas$ 
 ```
 
-![Instalación de SyncThingy, como paquete de Flatpak](/images/flatpak-syncthingy-install.png)
+## Creación/instalación del sitio
 
-## Configuración inicial
+```bash
+npm create astro@latest -- --template starlight dzamo.gitlab.io
+```
 
-### Ejecución sobre Desktop Linux
+En la captura siguiente se muestra la sesión de trabajo para crear el sitio, con esto ya queda nuestro sitio listo para ser usado en nuestro host actual.
 
-En la captura se muestra como ejecutar la aplicación, en un Desktop Linux
-
-![Ejecución de Syncthingy desde Desktop Linux](/images/syncthingy-running.png)
-
-Si la aplicación ha sido correctamente instalada, quedará ejecutandose (como proceso en backgroud, a _nombre_ del usuario actual). En la barra de estado de las aplicaciones misma estará disponible. Esto se muestra en la captura siguiente.
-
-![Syncthingy > icono en barra de tareas](/images/syncthingy-task-icon.png)
-
-### Configuración de la Web UI
-
-- Open Web UI
-
-![syncthingy > Open WebUI](/images/syncthingy-open-webui.png)
-
-- Configuración inicial del acceso a la Web UI
-
-![yncthingy > Open WebUI](/images/syncthingy-web-ui-setting.png)
+![Crear sitio > Astro+Starlight ](/images/astro-create-site-w-starlight.png)
