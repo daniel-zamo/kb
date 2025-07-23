@@ -1,0 +1,25 @@
+<!-- layouts/shortcodes/figure.html -->
+{{- $id := .Get 0 -}}
+{{- $src := .Get 1 -}}
+{{- $alt := .Get 2 -}}
+{{- $caption := .Get 3 -}}
+
+<!-- Verificaciones para parámetros obligatorios -->
+{{ if not $id }}
+    {{ errorf "Shortcode 'figure': El primer parámetro (id) es obligatorio. Archivo: %s" .Page.File.Path }}
+{{ end }}
+{{ if not $src }}
+    {{ errorf "Shortcode 'figure': El segundo parámetro (src) es obligatorio. Archivo: %s" .Page.File.Path }}
+{{ end }}
+
+<!-- Si no se provee 'alt', usar el 'caption' como fallback -->
+{{ if not $alt }}{{ $alt = $caption }}{{ end }}
+
+<figure id="{{ $id }}" class="figure-with-id">
+    <a href="{{ $src | absURL }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ $src | absURL }}" alt="{{ $alt }}" loading="lazy" />
+    </a>
+    {{ with $caption }}
+    <figcaption>{{ . | markdownify }}</figcaption>
+    {{ end }}
+</figure>
