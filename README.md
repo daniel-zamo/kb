@@ -1,6 +1,5 @@
 # README.md
 
-
 <img align="right" width="150" alt="logo Hugo theme Stack" src="https://user-images.githubusercontent.com/5889006/190859553-5b229b4f-c476-4cbd-928f-890f5265ca4c.png">
 
 # SSG Hugo Theme Stack Starter Template
@@ -71,3 +70,5 @@ Make sure also to specify Hugo version in the environment variable `HUGO_VERSION
 
 ![Environment variable](https://user-images.githubusercontent.com/5889006/156917212-afb7c70d-ab85-480f-8288-b15781a462c0.png)
 </details>
+
+---
