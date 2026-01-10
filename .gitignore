@@ -1,4 +1,32 @@
-aa-*
-public
-resources
+# --- Carpetas de Usuario / Flujo Personal ---
+# Mantenemos tus prefijos personales para archivos temporales y borradores
+zz-*
+dz_drafts/
+my-scripts/
+/*.sh/
+
+# --- Build & Output (Generados automáticamente) ---
+# No subimos 'public' porque GitHub Actions construye el sitio desde cero
+public/
+
+# Cache de recursos procesados (SCSS, imágenes redimensionadas)
+resources/
+
+# Archivo de bloqueo de ejecución local
 .hugo_build.lock
+
+# --- IDEs y Herramientas Locales ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Logs y Temporales ---
+*.log
+hugo_stats.json
+
+# --- Go & Hugo Modules ---
+# Si alguna vez usas 'hugo mod vendor', esta carpeta no debe ir al repo
+_vendor/

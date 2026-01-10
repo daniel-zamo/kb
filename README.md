@@ -1,43 +1,80 @@
-# README.md
+# @DZ Notes - Technical Knowledge Base
 
-<img align="right" width="150" alt="logo Hugo theme Stack" src="https://user-images.githubusercontent.com/5889006/190859553-5b229b4f-c476-4cbd-928f-890f5265ca4c.png">
+<div align="center">
+![Hugo](https://img.shields.io/badge/SSG-Hugo-red?logo=hugo&logoColor=white)
+![Go](https://img.shields.io/badge/Dependency-Go_Modules-blue?logo=go&logoColor=white)
+![Theme](https://img.shields.io/badge/Theme-Relearn-green?logo=relearn&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
+![Status](https://img.shields.io/github/actions/workflow/status/daniel-zamo/notes/gh-pages.yml?label=Deployment)
+</div>
 
-# SSG Hugo Theme Stack Starter Template
+## 📖 Descripción del Proyecto
 
-Este sitio esta generado utilizando el start template de [Hugo theme Stack](https://github.com/CaiJimmy/hugo-theme-stack). Utiliza la característica de [Hugo modules](https://gohugo.io/hugo-modules/) para cargar el tema (theme).
+Este repositorio constituye mi **Base de Conocimientos Técnica (Second Brain)**. A diferencia de un blog tradicional, este sitio está diseñado bajo un paradigma de **documentación operativa**, funcionando como un manual de vuelo para procedimientos de administración de sistemas, ingeniería de plataforma y automatización.
 
-Incluye una estructura y configuración de tema básico. Se ha configurado **GitHub Action** para implementar el tema automáticamente sobre una página pública de GitHub (Github Page). Además, cuenta con una tarea cron para actualizar el tema automáticamente a diario.
+### Arquitectura de la Solución
 
-## Configuración inicial
-
-1. Click sobre *Use this template*, and *create your repository as `<username>.github.io` on GitHub*.
-![Paso 1](https://user-images.githubusercontent.com/5889006/156916624-20b2a784-f3a9-4718-aa5f-ce2a436b241f.png)
-
-2. Una vez creado el repositorio, crea un espacio de código (codespace) de GitHub asociado a él.
-   ![Espacio de código (Create codespace)](https://user-images.githubusercontent.com/5889006/156916672-43b7b6e9-4ffb-4704-b4ba-d5ca40ffcae7.png)
-
-3. ¡Listo! Ya está para funcionar. El espacio de código se ha configurado con la última versión de Hugo Extended. Simplemente ejecute `hugo server` en la terminal y vea su nuevo sitio en acción.
-
-4. En la carpeta `config` se encontran los archivos de configuración. Estos pueden editarse según las necesidades. Asegurarse de actualizar la propiedad `baseurl` en `config/_default/config.toml` con la URL del sitio que corresponda.
-
-5. Ir a  *Settings* -> *Pages*. Cambiar el *build branch* from `master` to `gh-pages`.
-
-![Construir/Build](https://github.com/namanh11611/hugo-theme-stack-starter/assets/16586200/12c763cd-bead-4923-b610-8788f388fcb5)
-
-9. Una vez que se haya terminado de editar el sitio, simplemente hacer el `commit` (confirmarlo) y hacer el `push` (envíalo). *GitHub Action* (acción de GitHub) lo implementará automáticamente en la página de GitHub asociada al repositorio.
-![GitHub action](https://user-images.githubusercontent.com/5889006/156916881-90b8bb9b-1925-4e60-9d7a-8026cda729bf.png)
+- **Motor:** [Hugo](https://gohugo.io/) (Extended Version).
+- **Interfaz:** [Relearn Theme](https://mcshelby.github.io/hugo-theme-relearn/), optimizado para búsqueda jerárquica y legibilidad técnica.
+- **Gestión de Dependencias:** Go Modules para una trazabilidad de versiones del tema segura y reproducible.
+- **Pipeline:** Despliegue automatizado mediante GitHub Actions nativo.
 
 ---
 
-Si no quieres usar *GitHub Codespace*, también se puede ejecutar la plantilla en el equipo local. **Se Necesita instalar Git, Go y Hugo Extended localmente.**
+## 🛠️ Desarrollo Local
 
-## Update theme manually
+Para ejecutar este manual en un entorno local (Debian/WSL), asegúrate de tener instalados **Git**, **Go** y **Hugo Extended**.
 
-Run:
+### Pasos iniciales:
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone git@github.com:daniel-zamo/notes.git
+   cd notes
+   ```
+2. **Levantar el servidor de desarrollo:**
+   ```bash
+   hugo server -D
+   ```
+   
+   *El sitio estará disponible en `http://localhost:1313/notes/`.*
+
+---
+
+## 🚀 Pipeline de Despliegue (CI/CD)
+
+El sitio se despliega automáticamente en **GitHub Pages** mediante el flujo definido en `.github/workflows/gh-pages.yml`. 
+
+### Configuración en el Repositorio:
+
+Para que el despliegue funcione correctamente, la configuración en GitHub debe ser:
+
+1. Ir a **Settings** -> **Pages**.
+2. En **Build and deployment** -> **Source**, seleccionar: `GitHub Actions`.
+
+*Nota: Ya no se requiere una rama `gh-pages` intermedia, el despliegue es directo desde el artefacto de construcción.*
+
+---
+
+## 🔧 Mantenimiento del Sistema
+
+### Actualizar el Tema (Relearn):
+
+Como el tema se gestiona mediante **Go Modules**, la actualización es atómica y segura:
 
 ```bash
-hugo mod get -u github.com/CaiJimmy/hugo-theme-stack/v3
+hugo mod get -u github.com/McShelby/hugo-theme-relearn/v7
 hugo mod tidy
 ```
 
-> This starter template has been configured with `v3` version of theme. Due to the limitation of Go module, once the `v4` or up version of theme is released, you need to update the theme manually. (Modifying `config/module.toml` file)
+### Estructura de Contenidos:
+
+- `content/`: Todos los activos de conocimiento en formato Markdown/MDX.
+- `archetypes/`: Plantillas preconfiguradas para nuevos artículos (ej. People Template).
+
+---
+
+<div align="center">
+Desarrollado con mentalidad DevOps por Daniel Zamo.
+</div>
+
