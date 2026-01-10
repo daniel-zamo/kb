@@ -1,7 +1,6 @@
 ---
-title: "Gestión Metódica de Entrevistas: Template para Obsidian + Templater"
+title: "Gestión de Entrevistas: Plantilla para Obsidian + Templater"
 date: 2026-01-10
-description: "Implementación de un sistema de gestión de postulaciones para reducir la carga cognitiva durante procesos de selección IT."
 categories: ["Productividad"]
 tags: ["Obsidian", "Templater", "Workflow", "IT-Career"]
 icon: "fa-rocket"
@@ -67,4 +66,3 @@ await tp.file.rename(`${tp.date.now("YYYY-MM-DD")} - ${empresa} - ${cargo}`);
 1. **Estandarización:** Todas mis fichas de entrevista mantienen la misma jerarquía.
 2. **Histórico Auditable:** Permite revisar meses después por qué se descartó un proceso.
 3. **Foco en el Valor:** Al automatizar la estructura, mi tiempo se dedica exclusivamente a investigar a la empresa.
-
