@@ -2,6 +2,6 @@
 title = "Windows"
 weight = 20
 +++
+Recursos y scripts para la administración eficiente de entornos Windows y PowerShell.
 
-Notas sobre administración, scripting y personalización de entornos Windows.
-
+{{% children style="card" description="true" %}}

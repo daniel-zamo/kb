@@ -1,5 +1,5 @@
 ---
-title: "Enlaces Simbólicos y Junctions: El 'ln -s' en Windows"
+title: "Enlaces Simbólicos y Junctions"
 date: 2026-01-10
 description: "Cómo gestionar enlaces simbólicos y uniones de directorios mediante PowerShell sin morir en el intento de permisos."
 categories: ["Windows"]
@@ -7,7 +7,7 @@ tags: ["PowerShell", "CLI", "SysAdmin", "Storage"]
 icon: "fa-windows"
 ---
 
-Típico escenario de SysAdmin: necesitas mover tu carpeta de `_Inbox` (o cualquier directorio pesado) a un disco secundario `D:` pero quieres que el sistema y tus scripts sigan creyendo que está en tu `Home`. 
+Típico escenario de SysAdmin: necesitas mover tu carpeta de `_Inbox` (o cualquier directorio pesado) a un disco secundario `D:` pero quieres que el sistema y tus scripts sigan creyendo que está en tu `Home`.
 
 En Linux usaríamos `ln -s`, pero en Windows la cosa tiene sus matices, especialmente con los **privilegios**.
 
@@ -27,7 +27,7 @@ New-Item -Path "C:\Users\dzamo\_Inbox" -ItemType SymbolicLink -Value "D:\_Inbox"
 
 ## 2. El "Truco" del SysAdmin: Directory Junction
 
-Si solo necesitas linkear **carpetas locales** (entre discos del mismo PC), el **Junction** es tu mejor amigo. 
+Si solo necesitas linkear **carpetas locales** (entre discos del mismo PC), el **Junction** es tu mejor amigo.
 
 **¿Lo mejor?** No requiere privilegios de administrador.
 
@@ -36,7 +36,7 @@ Si solo necesitas linkear **carpetas locales** (entre discos del mismo PC), el *
 New-Item -Path "C:\Users\dzamo\_Inbox" -ItemType Junction -Value "D:\_Inbox"
 ```
 
-### Diferencias rápidas:
+### Diferencias rápidas
 
 | Característica | Symbolic Link | Junction |
 | :--- | :--- | :--- |

@@ -1,11 +1,15 @@
 ---
-title: "Prompt: Generador de Notas Atómicas - II"
+title: "Prompt: Generador de Notas - v2"
 date: 2026-01-10
-description: "Framework optimizado para generar notas técnicas con títulos concisos y estructura compatible con Relearn."
-categories: ["Library"]
+description: "Evolución del protocolo de generación, optimizado para títulos concisos y jerarquía de UI."
+categories: ["Protocolos"]
 tags: ["Prompt-Engineering", "Documentation", "UI-UX"]
 icon: "fa-robot"
 ---
+
+{{% notice tip %}}
+Esta versión evoluciona de mi **[protocolo inicial]({{% relref "tech-note-generator.md" %}})**, integrando restricciones de UX Writing para mejorar la navegación del sitio.
+{{% /notice %}}
 
 Para mantener la estética del sitio y evitar que el menú lateral se sature, este prompt incluye ahora restricciones de **UX Writing** para generar títulos cortos y directos.
 
@@ -38,8 +42,7 @@ Al final, añade un párrafo breve titulado "¿Por qué esta nota aporta valor a
 
 ---
 
-## 🛠 Cambios en la v2
+## 🛠 Mejoras en la v2
 
-* **Restricción de Longitud:** Títulos de 3-5 palabras.
-* **Optimización de UI:** Evita el text-wrapping en la Sidebar.
-* **Slug-friendly:** URLs más limpias.
+* **UX Sidebar:** Títulos limitados a 3-5 palabras para evitar cortes de texto.
+* **SEO Local:** URLs (slugs) más limpias y directas. *('Optimización de UI' > Evita el text-wrapping en la Sidebar; y 'Slug-friendly' > URLs más limpias).

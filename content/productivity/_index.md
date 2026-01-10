@@ -1,6 +1,7 @@
 +++
 title = "Productividad"
-weight = 1
+weight = 10
 +++
+Metodologías de organización técnica y gestión de flujos de trabajo.
 
-En esta sección documento mis metodologías de organización, optimización de flujos de trabajo y herramientas de gestión técnica.
+{{% children style="card" description="true" %}}
