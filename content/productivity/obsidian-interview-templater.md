@@ -1,5 +1,5 @@
 ---
-title: "TPL People Obsidian > Templater"
+title: "TPL People Obsidian + Templater"
 date: 2026-01-10
 categories: ["Productividad"]
 tags: ["Obsidian", "Templater", "Workflow", "IT-Career"]

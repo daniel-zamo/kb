@@ -7,4 +7,4 @@ Diccionario interactivo de siglas, conceptos y jerga técnica. El objetivo es es
 
 ---
 
-{{% children style="card" description="true" %}}
+{{% children type="flat" %}} 

@@ -7,4 +7,4 @@ Bienvenido a la sección de **Administración de Sistemas Linux**. Aquí encontr
 
 ---
 
-{{% children style="card" showheading="true" description="true" %}}
+{{% children type="flat" %}}

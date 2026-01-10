@@ -5,4 +5,4 @@ weight = 30
 
 Metodologías y prompts estructurados para la generación de activos técnicos y documentación asistida por modelos de lenguaje.
 
-{{% children style="card" description="true" %}}
+{{< children type="card" description="true" >}}

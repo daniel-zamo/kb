@@ -4,7 +4,8 @@ date: 2026-01-10
 description: "Protocolo inicial para transformar diálogos técnicos en artículos de alta calidad para Hugo Relearn."
 categories: ["Protocolos"]
 tags: ["Prompt-Engineering", "Documentation", "Automation"]
-icon: "fa-robot"
+icon: "fa-solid fa-tools"
+featured: "fa-solid fa-tools"
 ---
 
 {{% notice info %}}
