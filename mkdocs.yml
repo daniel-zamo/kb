@@ -12,6 +12,10 @@ edit_uri: edit/main/docs/
 # Configuración del tema Material
 theme:
   name: material
+
+  feature: 
+    - content.action.edit
+    - content.action.view
   language: es
   
   # Paleta de colores
@@ -55,16 +59,15 @@ theme:
 plugins:
   - search:
       lang: es
-  
-  - roamlinks  # Soporte para [[wikilinks]]
-  
+        #- roamlinks  # Soporte para [[wikilinks]] # Plugin antiguo segun AI Studio, en cuanto lo active utilizare el que recomiende este Modelo
   - callouts   # Soporte para callouts de Obsidian
-  
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
+        #type: datetime
       timezone: Europe/Madrid
       locale: es
+        #  - macros
 
 # Extensiones de Markdown
 markdown_extensions:
@@ -136,6 +139,6 @@ nav:
     - windows/index.md
   - SSG:
     - ssg/index.md
-  - IA:
-    - ai/index.md
+  - Protocolos IA:
+    - ai-protocols/index.md
 
