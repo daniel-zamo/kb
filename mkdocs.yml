@@ -137,5 +137,13 @@ nav:
       - windows/index.md
   - SSG:
       - ssg/index.md
-  - Protocolos IA:
-      - ai-protocols/index.md
+  - "Protocolos de IA":
+      - "Protocolos de IA": ai-protocols/index.md
+      - "Generador Astro Starlight": ai-protocols/master-note-generator-astro-starlight.md
+
+# Para que revise los enlaces y avise de posibles errores
+validation:
+  links:
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
