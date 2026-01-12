@@ -13,11 +13,11 @@ edit_uri: edit/main/docs/
 theme:
   name: material
 
-  feature: 
+  feature:
     - content.action.edit
     - content.action.view
   language: es
-  
+
   # Paleta de colores
   palette:
     # Modo claro
@@ -27,7 +27,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Cambiar a modo oscuro
-    
+
     # Modo oscuro
     - scheme: slate
       primary: indigo
@@ -35,20 +35,20 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Cambiar a modo claro
-  
+
   # Características
   features:
-    - navigation.instant      # Navegación rápida tipo SPA
-    - navigation.tracking     # URL actualizada en scroll
-    - navigation.tabs         # Pestañas superiores
-    - navigation.sections     # Secciones en sidebar
-    - navigation.expand       # Expandir secciones automáticamente
-    - navigation.top          # Botón "volver arriba"
-    - search.suggest          # Sugerencias en búsqueda
-    - search.highlight        # Resaltar términos buscados
-    - content.code.copy       # Botón copiar en bloques de código
-    - content.action.edit     # Botón editar en GitHub
-  
+    - navigation.instant # Navegación rápida tipo SPA
+    - navigation.tracking # URL actualizada en scroll
+    - navigation.tabs # Pestañas superiores
+    - navigation.sections # Secciones en sidebar (RECOMENDADO)
+    - navigation.expand # Expandir secciones automáticamente (RECOMENDADO)
+    - navigation.top # Botón "volver arriba"
+    - search.suggest # Sugerencias en búsqueda (RECOMENDADO)
+    - search.highlight # Resaltar términos buscados
+    - content.code.copy # Botón copiar en bloques de código (RECOMENDADO)
+    - content.action.edit # Botón editar en GitHub
+
   # Iconos
   icon:
     repo: fontawesome/brands/github
@@ -59,45 +59,44 @@ theme:
 plugins:
   - search:
       lang: es
-        #- roamlinks  # Soporte para [[wikilinks]] # Plugin antiguo segun AI Studio, en cuanto lo active utilizare el que recomiende este Modelo
-  - callouts   # Soporte para callouts de Obsidian
+  - callouts # Soporte para callouts de Obsidian
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
-        #type: datetime
       timezone: Europe/Madrid
       locale: es
-        #  - macros
 
 # Extensiones de Markdown
 markdown_extensions:
   # Sintaxis básica mejorada
   - abbr
-  - admonition
-  - attr_list
+  - admonition # RECOMENDADO (Para notas/avisos)
+  - attr_list # RECOMENDADO
   - def_list
   - footnotes
-  - md_in_html
+  - md_in_html # RECOMENDADO
   - tables
   - toc:
       permalink: true
       title: En esta página
-  
+
   # Bloques de código avanzados
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences:
+  - pymdownx.superfences: # RECOMENDADO
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
-  
+
   # Mejoras de contenido
-  - pymdownx.details
+  - pymdownx.details # RECOMENDADO
+  - pymdownx.tabbed: # AÑADIDO (RECOMENDADO para migrar tabs de Hugo)
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -106,7 +105,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.tasklist:
       custom_checkbox: true
-  
+
   # Fórmulas matemáticas (opcional)
   - pymdownx.arithmatex:
       generic: true
@@ -126,19 +125,17 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/daniel-zamo
-  
-  # Footer personalizado
-  generator: false  # Oculta "Made with Material for MkDocs"
+
+  generator: false # Oculta "Made with Material for MkDocs"
 
 # Navegación (estructura inicial)
 nav:
   - Inicio: index.md
   - Linux:
-    - linux/index.md
+      - linux/index.md
   - Windows:
-    - windows/index.md
+      - windows/index.md
   - SSG:
-    - ssg/index.md
+      - ssg/index.md
   - Protocolos IA:
-    - ai-protocols/index.md
-
+      - ai-protocols/index.md

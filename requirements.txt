@@ -7,6 +7,7 @@ colorama==0.4.6
 ghp-import==2.1.0
 gitdb==4.0.12
 GitPython==3.1.46
+hjson==3.1.0
 idna==3.11
 Jinja2==3.1.6
 Markdown==3.10
@@ -31,5 +32,7 @@ pyyaml_env_tag==1.1
 requests==2.32.5
 six==1.17.0
 smmap==5.0.2
+super_collections==0.6.2
+termcolor==3.3.0
 urllib3==2.6.3
 watchdog==6.0.0

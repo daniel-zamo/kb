@@ -1,14 +1,9 @@
-# Base de Conocimientos Técnica
-
-Bienvenido a mi base de conocimientos sobre desarrollo y sistemas.
-
-## Secciones
-
-- **[Linux](linux/index.md)**: Administración, scripts, configuración
-- **[Windows](windows/index.md)**: PowerShell, WSL, optimización
-- **[SSG](ssg/index.md)**: Hugo, MkDocs, Astro
-- **[IA](ai/index.md)**: Prompting, APIs, herramientas
-
+---
+title: "Inicio"
 ---
 
-Última actualización: {{ git_revision_date_localized }}
+## 🛠 Knowledge Base
+
+Bienvenido a mi documentación técnica. Esta base de conocimientos está construida con **MkDocs + Material** y desplegada mediante **GitHub Actions**.
+
+Utiliza el buscador en la parte superior o navega por las secciones del menú lateral.
