@@ -2,6 +2,7 @@ site_name: Base de Conocimientos Técnica
 site_url: https://daniel-zamo.github.io/kb
 site_author: Daniel Zamo
 site_description: Documentación técnica sobre Linux, Windows, SSG y protocolos de IA
+use_directory_urls: true
 
 # Repositorio
 repo_name: daniel-zamo/kb

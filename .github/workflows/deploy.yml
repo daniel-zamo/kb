@@ -1,37 +1,33 @@
 name: Deploy MkDocs
-
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout código
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Para git-revision-date-localized
-      
-      - name: Configurar Python
-        uses: actions/setup-python@v5
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.x
           cache: 'pip'
-      
-      - name: Instalar dependencias
-        run: |
-          pip install -r requirements.txt
-      
-      - name: Configurar Git
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email github-actions[bot]@users.noreply.github.com
-      
-      - name: Deploy a GitHub Pages
-        run: mkdocs gh-deploy --force
+      - run: pip install -r requirements.txt
+      - run: mkdocs build
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site  # MkDocs genera el sitio aquí por defecto
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
