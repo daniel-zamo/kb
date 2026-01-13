@@ -1,0 +1,15 @@
+nav:
+  #  - "🏠 Inicio": index.md
+  - Inicio: index.md
+  #  - "🐧 Linux": linux/
+  - Linux: linux/
+  #  - "🪟 Windows": windows/
+  - Windows: windows/
+  #  - "🛠️ Productividad": productivity/
+  - Productividad: productivity/
+  #  - "🌐 SSG": ssg/
+  - SSG: ssg/
+  #  - "🤖 Protocolos IA": ai-protocols/
+  - Protocolos IA: ai-protocols/
+  #  - "📖 Glosario": glossary/
+  - Glosario: glossary/

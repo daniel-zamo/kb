@@ -20,14 +20,6 @@ theme:
 
   # Paleta de colores
   palette:
-    # Modo claro
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Cambiar a modo oscuro
-
     # Modo oscuro
     - scheme: slate
       primary: indigo
@@ -35,6 +27,14 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Cambiar a modo claro
+
+    # Modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
 
   # Características
   features:
@@ -96,7 +96,6 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
-
   # Mejoras de contenido
   - pymdownx.details # RECOMENDADO
   - pymdownx.tabbed:
@@ -113,6 +112,9 @@ markdown_extensions:
   # Fórmulas matemáticas (opcional)
   - pymdownx.arithmatex:
       generic: true
+  # Para que los bloques ??? info se vean como acordeones colapsables
+  - pymdownx.details
+  - pymdownx.superfences
 
 # JavaScript extra para LaTeX (si usas fórmulas)
 extra_javascript:

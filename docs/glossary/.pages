@@ -1,0 +1,6 @@
+title: Glosario
+icon: material/book-open-variant
+
+nav:
+  - Inicio: index.md
+  - "Términos DevOps": devops-terms.md
