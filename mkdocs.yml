@@ -1,4 +1,4 @@
-site_name: Base de Conocimientos Técnica
+site_name: Notas Técnicas
 site_url: https://daniel-zamo.github.io/kb
 site_author: Daniel Zamo
 site_description: Documentación técnica sobre Linux, Windows, SSG y protocolos de IA
@@ -59,6 +59,7 @@ theme:
 plugins:
   - search:
       lang: es
+  - awesome-pages # AGREGADO: Gestión automática de navegación
   - callouts # Soporte para callouts de Obsidian
   - git-revision-date-localized:
       enable_creation_date: true
@@ -95,7 +96,7 @@ markdown_extensions:
 
   # Mejoras de contenido
   - pymdownx.details # RECOMENDADO
-  - pymdownx.tabbed: # AÑADIDO (RECOMENDADO para migrar tabs de Hugo)
+  - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -128,18 +129,8 @@ extra:
 
   generator: false # Oculta "Made with Material for MkDocs"
 
-# Navegación (estructura inicial)
-nav:
-  - Inicio: index.md
-  - Linux:
-      - linux/index.md
-  - Windows:
-      - windows/index.md
-  - SSG:
-      - ssg/index.md
-  - "Protocolos de IA":
-      - "Protocolos de IA": ai-protocols/index.md
-      - "Generador Astro Starlight": ai-protocols/master-note-generator-astro-starlight.md
+# La sección "nav" ha sido eliminada para permitir que awesome-pages
+# gestione la navegación automáticamente basada en la estructura de archivos.
 
 # Para que revise los enlaces y avise de posibles errores
 validation:
