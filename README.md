@@ -2,83 +2,83 @@
 
 <div align="center">
 
-![Hugo](https://img.shields.io/badge/SSG-Hugo-red?logo=hugo&logoColor=white)
-![Go](https://img.shields.io/badge/Dependency-Go_Modules-blue?logo=go&logoColor=white)
-![Theme](https://img.shields.io/badge/Theme-Relearn-green?logo=relearn&logoColor=white)
+![MkDocs](https://img.shields.io/badge/SSG-MkDocs-blue?logo=python&logoColor=white)
+![Material](https://img.shields.io/badge/Theme-Material-indigo?logo=materialdesign&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
-![Status](https://img.shields.io/github/actions/workflow/status/daniel-zamo/notes/gh-pages.yml?label=Deployment)
+![Status](https://img.shields.io/github/actions/workflow/status/daniel-zamo/kb/gh-pages.yml?label=Deployment)
 
 </div>
 
 ## 📖 Descripción del Proyecto
 
-Este repositorio constituye mi **Base de Conocimientos Técnica (Second Brain)**. A diferencia de un blog tradicional, este sitio está diseñado bajo un paradigma de **documentación operativa**, funcionando como un manual de vuelo para procedimientos de administración de sistemas, ingeniería de plataforma y automatización.
+Este repositorio es mi **Base de Conocimientos Técnica (Second Brain)**. Trasladado desde Hugo a **MkDocs**, este sitio funciona como un manual de vuelo operativo para procedimientos de administración de sistemas, ingeniería de plataforma y protocolos de IA.
+
+A diferencia de un blog, aquí prima la **atomicidad y la recuperabilidad** de la información mediante una arquitectura de enlaces inteligentes.
 
 ### Arquitectura de la Solución
 
-- **Motor:** [Hugo](https://gohugo.io/) (Extended Version).
-- **Interfaz:** [Relearn Theme](https://mcshelby.github.io/hugo-theme-relearn/), optimizado para búsqueda jerárquica y legibilidad técnica.
-- **Gestión de Dependencias:** Go Modules para una trazabilidad de versiones del tema segura y reproducible.
-- **Pipeline:** Despliegue automatizado mediante GitHub Actions nativo.
+- **Motor:** [MkDocs](https://www.mkdocs.org/) (Basado en Python).
+- **Interfaz:** [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), optimizado para documentación técnica avanzada.
+- **Navegación:** Gestión automática mediante `awesome-pages` y referencias cruzadas con `autorefs`.
+- **Pipeline:** Despliegue automatizado en GitHub Pages mediante GitHub Actions.
 
 ---
 
 ## 🛠️ Desarrollo Local
 
-Para ejecutar este manual en un entorno local (Debian/WSL), asegúrate de tener instalados **Git**, **Go** y **Hugo Extended**.
+Para trabajar en esta KB, se requiere **Python 3.x** y un entorno virtual configurado.
 
-### Pasos iniciales
+### Instalación y ejecución
 
 1. **Clonar el repositorio:**
 
    ```bash
-   git clone git@github.com:daniel-zamo/notes.git
-   cd notes
+   git clone git@github.com:daniel-zamo/kb.git
+   cd kb
    ```
 
-2. **Levantar el servidor de desarrollo:**
+2. **Configurar el entorno virtual e instalar dependencias:**
 
    ```bash
-   hugo server -D
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
 
-   *El sitio estará disponible en `http://localhost:1313/notes/`.*
+3. **Levantar el servidor de desarrollo:**
+
+   ```bash
+   mkdocs serve
+   ```
+
+   *El sitio estará disponible en `http://127.0.0.1:8000/`.*
 
 ---
 
 ## 🚀 Pipeline de Despliegue (CI/CD)
 
-El sitio se despliega automáticamente en **GitHub Pages** mediante el flujo definido en `.github/workflows/gh-pages.yml`.
+El sitio se sincroniza automáticamente con **GitHub Pages** al detectar cambios en la rama principal.
 
-### Configuración en el Repositorio
-
-Para que el despliegue funcione correctamente, la configuración en GitHub debe ser:
-
-1. Ir a **Settings** -> **Pages**.
-2. En **Build and deployment** -> **Source**, seleccionar: `GitHub Actions`.
-
-*Nota: Ya no se requiere una rama `gh-pages` intermedia, el despliegue es directo desde el artefacto de construcción.*
+- **Workflow:** `.github/workflows/gh-pages.yml`
+- **Configuración:** En el repositorio, ir a *Settings -> Pages* y asegurar que la fuente sea `GitHub Actions`.
 
 ---
 
-## 🔧 Mantenimiento del Sistema
+## 📂 Estructura de Contenidos
 
-### Actualizar el Tema (Relearn)
-
-Como el tema se gestiona mediante **Go Modules**, la actualización es atómica y segura:
-
-```bash
-hugo mod get -u github.com/McShelby/hugo-theme-relearn/v7
-hugo mod tidy
-```
-
-### Estructura de Contenidos
-
-- `content/`: Todos los activos de conocimiento en formato Markdown/MDX.
-- `archetypes/`: Plantillas preconfiguradas para nuevos artículos (ej. People Template).
+- `docs/`: Contenido fuente en Markdown.
+  - `ai-protocols/`: Prompts y flujos de trabajo con IA.
+  - `linux/`: Administración de sistemas y storage.
+  - `productivity/`: Optimización de VS Code y metodologías.
+- `mkdocs.yml`: Configuración central del sitio y plugins.
 
 ---
+
+## ⚖️ Licencia
+
+Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
 
 <div align="center">
-Desarrollado con mentalidad DevOps por Daniel Zamo.
+Desarrollado con mentalidad DevOps por Daniel Oscar Zamo.
 </div>
