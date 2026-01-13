@@ -1,5 +1,7 @@
 title: Protocolos IA
 icon: material/robot
+
 nav:
-  - master-note-generator-astro-starlight.md
+  - "Inicio": index.md
+  - "Prompt: Art. de Portfolio (Astro/Starlight)": master-note-generator-astro-starlight.md
   - ... # El resto de archivos se listarán automáticamente después

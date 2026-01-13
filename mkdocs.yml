@@ -63,6 +63,7 @@ plugins:
   - search:
       lang: es
   - awesome-pages # AGREGADO: Gestión automática de navegación
+  - autorefs
   - callouts # Soporte para callouts de Obsidian
   - git-revision-date-localized:
       enable_creation_date: true
