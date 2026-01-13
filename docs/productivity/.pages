@@ -1,1 +1,6 @@
 title: 🛠️ Productividad
+nav:
+  - Inicio: index.md
+  - "VS Code Soporte .pages": vscode-pages-yaml.md
+  - "VS Code Ajustes Workspace": vscode-workspace-optimization.md
+  - ...

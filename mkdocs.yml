@@ -72,10 +72,10 @@ markdown_extensions:
   # Sintaxis básica mejorada
   - abbr
   - admonition # RECOMENDADO (Para notas/avisos)
-  - attr_list # RECOMENDADO
+  - attr_list # RECOMENDADO (Permite añadir clases CSS como {.grid .cards})
   - def_list
   - footnotes
-  - md_in_html # RECOMENDADO
+  - md_in_html # RECOMENDADO (Permite que el Markdown dentro del <div> de las tarjetas funcione)
   - tables
   - toc:
       permalink: true
