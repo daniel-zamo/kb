@@ -1,2 +1,7 @@
 title: Linux
 icon: material/linux
+
+nav:
+  - Inicio: index.md
+  - "Expansión LVM": lvm-expansion.md
+#  - ...
