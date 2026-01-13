@@ -1,4 +1,5 @@
-title: 🛠️ Productividad
+title: Productividad
+icon: material/tools
 nav:
   - Inicio: index.md
   - "VS Code Soporte .pages": vscode-pages-yaml.md

@@ -1,0 +1,8 @@
+title: Generadores de Sitios Estáticos
+icon: material/web
+nav:
+  - "Inicio": index.md
+  - "KB vs Portfolio": kb-vs-portfolio.md
+  - "Gestión de links Hugo": hugo-link-management.md
+  - "Fix Relearn v8": hugo-relearn-v8-fix.md
+  - ...

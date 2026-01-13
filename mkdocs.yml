@@ -41,6 +41,9 @@ theme:
     - navigation.instant # Navegación rápida tipo SPA
     - navigation.tracking # URL actualizada en scroll
     - navigation.tabs # Pestañas superiores
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.code.copy
     - navigation.sections # Secciones en sidebar (RECOMENDADO)
     - navigation.expand # Expandir secciones automáticamente (RECOMENDADO)
     - navigation.top # Botón "volver arriba"
@@ -80,7 +83,6 @@ markdown_extensions:
   - toc:
       permalink: true
       title: En esta página
-
   # Bloques de código avanzados
   - pymdownx.highlight:
       anchor_linenums: true
