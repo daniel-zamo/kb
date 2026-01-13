@@ -63,7 +63,7 @@ plugins:
   - search:
       lang: es
   - awesome-pages # AGREGADO: Gestión automática de navegación
-  - autorefs
+  - autorefs # Referencias automáticas (link internos - MkDocs en esto no es muy potente, pero este plugin ayuda bastante)
   - callouts # Soporte para callouts de Obsidian
   - git-revision-date-localized:
       enable_creation_date: true
