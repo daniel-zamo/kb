@@ -1,7 +1,9 @@
 title: Productividad
 icon: material/tools
+
 nav:
   - Inicio: index.md
-  - "VS Code Soporte .pages": vscode-pages-yaml.md
-  - "VS Code Ajustes Workspace": vscode-workspace-optimization.md
-  - ...
+  - "Soporte .pages": vscode-pages-yaml.md
+  - "Ajustes Workspace": vscode-workspace-optimization.md
+  - "Plantilla Entrevistas": obsidian-interview-templater.md
+#  - ...
