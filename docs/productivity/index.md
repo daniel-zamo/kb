@@ -23,6 +23,18 @@ Bienvenido a la sección de optimización de herramientas. Aquí encontrarás pr
     Optimización del archivo `settings.json` para proyectos de documentación técnica.
     [:octicons-arrow-right-24: Ver optimizaciones](vscode-workspace-optimization.md)
 
+- :material-git:{ .lg .middle } __Estándares Git__
+    ---
+
+    Guía de Conventional Commits y mejores prácticas para mensajes históricos.
+    [:octicons-arrow-right-24: Ver estándares][git-standards]
+
+- :material-console-line:{ .lg .middle } __Flujo Git__
+    ---
+
+    Técnicas de commit multilínea e integración con editores de texto.
+    [:octicons-arrow-right-24: Ver flujo][git-workflow]
+
 - :material-notebook-edit:{ .lg .middle } __Entrevistas Obsidian__
     ---
 

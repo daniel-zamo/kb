@@ -5,5 +5,6 @@ nav:
   - Inicio: index.md
   - "Soporte .pages": vscode-pages-yaml.md
   - "Ajustes Workspace": vscode-workspace-optimization.md
+  - "Estándares Git": git-conventional-commits.md
+  - "Flujo Git": git-workflow-optimization.md
   - "Plantilla Entrevistas": obsidian-interview-templater.md
-#  - ...
