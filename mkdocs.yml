@@ -4,31 +4,20 @@ site_author: Daniel Zamo
 site_description: Documentación técnica sobre Linux, Windows, SSG y protocolos de IA
 use_directory_urls: true
 
-# Repositorio
 repo_name: daniel-zamo/kb
 repo_url: https://github.com/daniel-zamo/kb
 edit_uri: edit/main/docs/
 
-# Configuración del tema Material
 theme:
   name: material
-
-  feature:
-    - content.action.edit
-    - content.action.view
   language: es
-
-  # Paleta de colores
   palette:
-    # Modo oscuro
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
         name: Cambiar a modo claro
-
-    # Modo claro
     - scheme: default
       primary: indigo
       accent: indigo
@@ -36,110 +25,90 @@ theme:
         icon: material/brightness-7
         name: Cambiar a modo oscuro
 
-  # Características
   features:
-    - navigation.instant # Navegación rápida tipo SPA
-    - navigation.tracking # URL actualizada en scroll
-    - navigation.tabs # Pestañas superiores
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs # Pestañas arriba
     - navigation.tabs.sticky
-    - navigation.indexes
+    - navigation.indexes # Importante: El index de carpeta es el link del tab
+    - navigation.top
+    - navigation.sections # Crea grupos visuales en el sidebar
+    - navigation.expand # Mantenemos las secciones expandidas
     - content.code.copy
-    - navigation.sections # Secciones en sidebar (RECOMENDADO)
-    - navigation.expand # Expandir secciones automáticamente (RECOMENDADO)
-    - navigation.top # Botón "volver arriba"
-    - search.suggest # Sugerencias en búsqueda (RECOMENDADO)
-    - search.highlight # Resaltar términos buscados
-    - content.code.copy # Botón copiar en bloques de código (RECOMENDADO)
-    - content.action.edit # Botón editar en GitHub
+    - content.action.edit
 
-  # Iconos
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye
-
-# Plugins
+# 1. ELIMINAMOS awesome-pages para ganar control manual
 plugins:
   - search:
       lang: es
-  - awesome-pages # AGREGADO: Gestión automática de navegación
-  - autorefs # Referencias automáticas (link internos - MkDocs en esto no es muy potente, pero este plugin ayuda bastante)
-  - callouts # Soporte para callouts de Obsidian
+  - autorefs
+  - callouts
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
       timezone: Europe/Madrid
       locale: es
 
-# Extensiones de Markdown
+# 2. DEFINICIÓN EXPLÍCITA (Aquí es donde recuperas el menú lateral)
+nav:
+  - Inicio: index.md
+  - Linux:
+      - linux/index.md
+      - linux/lvm-expansion.md
+  - Windows:
+      - windows/index.md
+      - windows/wsl-rocky-linux-9.md
+      - windows/wsl-mantenimiento-imagenes.md
+      - windows/wsl-wezterm-troubleshooting.md
+      - windows/powershell-link.md
+  - Productividad:
+      - productivity/index.md
+      - "Config WezTerm": productivity/wezterm-config-sysadmin.md
+      - "Soporte .pages": productivity/vscode-pages-yaml.md
+      - "Ajustes Workspace": productivity/vscode-workspace-optimization.md
+      - "Estándares Git": productivity/git-conventional-commits.md
+      - "Flujo Git": productivity/git-workflow-optimization.md
+      - "Plantilla Entrevistas": productivity/obsidian-interview-templater.md
+  - SSG:
+      - ssg/index.md
+      - ssg/hugo-link-management.md
+      - ssg/hugo-relearn-v8-fix.md
+      - ssg/hugo-vs-mkdocs-linking.md
+      - ssg/kb-vs-portfolio.md
+      - ssg/mkdocs-autorefs-guide.md
+  - Protocolos IA:
+      - "Inicio": ai-protocols/index.md
+      - "Prompt Portfolio (Astro)": ai-protocols/master-note-generator-astro-starlight.md
+      - "Prompt Notas (Hugo)": ai-protocols/master-note-generator-hugo-relearn.md
+      - "Gen. Notas v2": ai-protocols/tech-note-generator-ii.md
+      - "Gen. Notas v1": ai-protocols/tech-note-generator.md
+  - Glosario:
+      - glossary/index.md
+      - glossary/devops-terms.md
+
 markdown_extensions:
-  # Sintaxis básica mejorada
-  - abbr
-  - admonition # RECOMENDADO (Para notas/avisos)
-  - attr_list # RECOMENDADO (Permite añadir clases CSS como {.grid .cards})
-  - def_list
-  - footnotes
-  - md_in_html # RECOMENDADO (Permite que el Markdown dentro del <div> de las tarjetas funcione)
-  - tables
+  - admonition
+  - attr_list
+  - md_in_html
   - toc:
       permalink: true
       title: En esta página
-  # Bloques de código avanzados
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.superfences: # RECOMENDADO
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.snippets
-  # Mejoras de contenido
-  - pymdownx.details # RECOMENDADO
+  - pymdownx.superfences
+  - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tasklist:
-      custom_checkbox: true
 
-  # Fórmulas matemáticas (opcional)
-  - pymdownx.arithmatex:
-      generic: true
-  # Para que los bloques ??? info se vean como acordeones colapsables
-  - pymdownx.details
-  - pymdownx.superfences
-
-# JavaScript extra para LaTeX (si usas fórmulas)
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-# CSS personalizado (opcional)
 extra_css:
   - stylesheets/extra.css
 
-# Información extra
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/daniel-zamo
-
-  generator: false # Oculta "Made with Material for MkDocs"
-
-# La sección "nav" ha sido eliminada para permitir que awesome-pages
-# gestione la navegación automáticamente basada en la estructura de archivos.
-
-# Para que revise los enlaces y avise de posibles errores
 validation:
   links:
     anchors: warn
-    absolute_links: warn
-    unrecognized_links: warn

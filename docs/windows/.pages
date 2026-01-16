@@ -1,2 +1,9 @@
 title: Windows
 icon: material/microsoft-windows
+
+nav:
+  - Inicio: index.md
+  - "WSL - Rocky Linux 9": wsl-rocky-linux-9.md
+  - "WSL - Gestión Backups": wsl-image-maintenance.md
+  - "WezTerm - Resolución Errores": wsl-wezterm-troubleshooting.md
+  - "PowerShell - Enlaces": powershell-link.md

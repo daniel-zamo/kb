@@ -3,8 +3,9 @@ icon: material/tools
 
 nav:
   - Inicio: index.md
-  - "Soporte .pages": vscode-pages-yaml.md
-  - "Ajustes Workspace": vscode-workspace-optimization.md
+  - "WSL - Configuración WezTerm": wezterm-config-sysadmin.md
+  - "VSCode - Soporte .pages": vscode-pages-yaml.md
+  - "VSCode - Ajustes Workspace": vscode-workspace-optimization.md
   - "Estándares Git": git-conventional-commits.md
   - "Flujo Git": git-workflow-optimization.md
-  - "Plantilla Entrevistas": obsidian-interview-templater.md
+#  - "Plantilla Entrevistas": obsidian-interview-templater.md

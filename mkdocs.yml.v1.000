@@ -1,0 +1,145 @@
+site_name: Notas Técnicas
+site_url: https://daniel-zamo.github.io/kb
+site_author: Daniel Zamo
+site_description: Documentación técnica sobre Linux, Windows, SSG y protocolos de IA
+use_directory_urls: true
+
+# Repositorio
+repo_name: daniel-zamo/kb
+repo_url: https://github.com/daniel-zamo/kb
+edit_uri: edit/main/docs/
+
+# Configuración del tema Material
+theme:
+  name: material
+
+  feature:
+    - content.action.edit
+    - content.action.view
+  language: es
+
+  # Paleta de colores
+  palette:
+    # Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+    # Modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+  # Características
+  features:
+    - navigation.instant # Navegación rápida tipo SPA
+    - navigation.tracking # URL actualizada en scroll
+    - navigation.tabs # Pestañas superiores
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - content.code.copy
+    - navigation.sections # Secciones en sidebar (RECOMENDADO)
+    - navigation.expand # Expandir secciones automáticamente (RECOMENDADO)
+    - navigation.top # Botón "volver arriba"
+    - search.suggest # Sugerencias en búsqueda (RECOMENDADO)
+    - search.highlight # Resaltar términos buscados
+    - content.code.copy # Botón copiar en bloques de código (RECOMENDADO)
+    - content.action.edit # Botón editar en GitHub
+
+  # Iconos
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+# Plugins
+plugins:
+  - search:
+      lang: es
+  - awesome-pages # AGREGADO: Gestión automática de navegación
+  - autorefs # Referencias automáticas (link internos - MkDocs en esto no es muy potente, pero este plugin ayuda bastante)
+  - callouts # Soporte para callouts de Obsidian
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      timezone: Europe/Madrid
+      locale: es
+
+# Extensiones de Markdown
+markdown_extensions:
+  # Sintaxis básica mejorada
+  - abbr
+  - admonition # RECOMENDADO (Para notas/avisos)
+  - attr_list # RECOMENDADO (Permite añadir clases CSS como {.grid .cards})
+  - def_list
+  - footnotes
+  - md_in_html # RECOMENDADO (Permite que el Markdown dentro del <div> de las tarjetas funcione)
+  - tables
+  - toc:
+      permalink: true
+      title: En esta página
+  # Bloques de código avanzados
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences: # RECOMENDADO
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  # Mejoras de contenido
+  - pymdownx.details # RECOMENDADO
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # Fórmulas matemáticas (opcional)
+  - pymdownx.arithmatex:
+      generic: true
+  # Para que los bloques ??? info se vean como acordeones colapsables
+  - pymdownx.details
+  - pymdownx.superfences
+
+# JavaScript extra para LaTeX (si usas fórmulas)
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# CSS personalizado (opcional)
+extra_css:
+  - stylesheets/extra.css
+
+# Información extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/daniel-zamo
+
+  generator: false # Oculta "Made with Material for MkDocs"
+
+# La sección "nav" ha sido eliminada para permitir que awesome-pages
+# gestione la navegación automáticamente basada en la estructura de archivos.
+
+# Para que revise los enlaces y avise de posibles errores
+validation:
+  links:
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn

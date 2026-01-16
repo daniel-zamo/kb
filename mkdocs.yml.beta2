@@ -1,0 +1,114 @@
+site_name: Notas Técnicas
+site_url: https://daniel-zamo.github.io/kb
+site_author: Daniel Zamo
+site_description: Documentación técnica sobre Linux, Windows, SSG y protocolos de IA
+use_directory_urls: true
+
+repo_name: daniel-zamo/kb
+repo_url: https://github.com/daniel-zamo/kb
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+
+  # Paleta de colores
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs # Pestañas superiores (Categorías)
+    - navigation.tabs.sticky
+    - navigation.indexes # El index.md es el link de la pestaña
+    - navigation.top
+    - navigation.path # Muestra el path en el breadcrumb (Ayuda a la navegación)
+    - navigation.prune # Optimiza el renderizado de árboles grandes
+    # - navigation.sections    # DESACTIVADO: Puede ocultar el sidebar si no hay profundidad suficiente
+    # - navigation.expand      # DESACTIVADO: Mejor dejar que el usuario controle la expansión
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+plugins:
+  - search:
+      lang: es
+  - awesome-pages # Gestiona .pages
+  - autorefs
+  - callouts
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      timezone: Europe/Madrid
+      locale: es
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: En esta página
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/daniel-zamo
+  generator: false
+
+validation:
+  links:
+    anchors: warn
+    absolute_links: warn
+    unrecognized_links: warn
