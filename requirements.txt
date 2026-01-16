@@ -1,5 +1,4 @@
 mkdocs-material>=9.5.0
-mkdocs-awesome-pages-plugin
 mkdocs-autorefs
 mkdocs-callouts
 mkdocs-git-revision-date-localized-plugin
