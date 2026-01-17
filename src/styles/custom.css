@@ -22,7 +22,7 @@
     /* Aumentamos el ancho máximo del contenido (Default es ~45rem) */
     /* 80rem permite diagramas grandes sin romper las columnas laterales */
     /* 80rem; <-- valor inicial v1 , funcional */
-    --sl-content-width: 20rem;
+    --sl-content-width: 60rem;
 
 }
 
@@ -39,17 +39,31 @@
 
 /* --- CORRECCIÓN DE CONTRASTE: SELECTOR DE TEMA --- */
 /* Mejora el selector de modo oscuro/claro para que no se vea "lavado" */
+/* --- CORRECCIÓN DE CONTRASTE Y SOLAPAMIENTO: SELECTOR DE TEMA --- */
 starlight-theme-select select {
     background-color: var(--sl-color-gray-6) !important;
     border: 1px solid var(--sl-color-gray-4) !important;
     color: var(--sl-color-white) !important;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
+    /* Aumentamos el padding derecho (2.5rem) para dar espacio al icono */
+    padding: 0.25rem 2.5rem 0.25rem 0.75rem !important;
+    border-radius: 0.4rem;
     cursor: pointer;
+    /* Aseguramos un ancho mínimo para que el texto no baile según la palabra */
+    min-width: 7.5rem;
+    /* Suavizamos la apariencia */
+    font-size: var(--sl-text-sm) !important;
+    line-height: 1.5;
+}
+
+/* El icono que Starlight pone encima necesita ser respetado */
+starlight-theme-select label {
+    /* Esto asegura que el icono (que suele ser un <svg> hermano) no bloquee el click */
+    pointer-events: none;
 }
 
 starlight-theme-select select:hover {
-    border-color: var(--sl-color-accent);
+    border-color: var(--sl-color-accent-high) !important;
+    background-color: var(--sl-color-gray-5) !important;
 }
 
 /* --- OPTIMIZACIÓN DE DIAGRAMAS MERMAID --- */
