@@ -1,10 +1,13 @@
 /* Maximizar el ancho del contenido */
+/*
 :root {
     --sl-content-width: 100% !important;
     --sl-text-base: 1.1rem;
 }
+*/
 
 /* Opcional: Ajustar el layout para que no se pegue a los bordes */
+/*
 .main-frame {
     max-width: 100vw;
 }
@@ -12,4 +15,40 @@
 .content-panel {
     max-width: 95% !important;
     margin: 0 auto;
+}
+*/
+/* Optimizaciones de visualización para diagramas de arquitectura */
+
+.mermaid-diagram-container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--sl-color-gray-6);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    border: 1px solid var(--sl-color-gray-5);
+    overflow-x: auto;
+}
+
+/* Asegura que los diagramas ocupen el ancho correcto */
+.mermaid-diagram-container svg {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Forzar legibilidad de textos en diagramas */
+.mermaid-diagram-container .node text,
+.mermaid-diagram-container .edgeLabel {
+    fill: var(--sl-color-white) !important;
+    font-family: var(--sl-font-mono) !important;
+}
+
+/* Ocultar el bloque original antes de que el JS lo procese para evitar salto visual */
+code.language-mermaid {
+    display: none;
+}
+
+/* Oculta el bloque de código de mermaid mientras se procesa */
+pre:has(code.language-mermaid) {
+    display: none;
 }
