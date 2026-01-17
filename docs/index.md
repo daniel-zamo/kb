@@ -1,8 +1,5 @@
 ---
 title: Inicio
-hide:
-  - navigation
-  - toc
 ---
 
 # 🛠️ Knowledge Base: Mis Notas Técnicas

@@ -1,84 +1,49 @@
-# @DZ Notes - Technical Knowledge Base
+# Starlight Starter Kit: Basics
 
-<div align="center">
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-![MkDocs](https://img.shields.io/badge/SSG-MkDocs-blue?logo=python&logoColor=white)
-![Material](https://img.shields.io/badge/Theme-Material-indigo?logo=materialdesign&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
-![Status](https://img.shields.io/github/actions/workflow/status/daniel-zamo/kb/gh-pages.yml?label=Deployment)
+```
+npm create astro@latest -- --template starlight
+```
 
-</div>
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 📖 Descripción del Proyecto
+## 🚀 Project Structure
 
-Este repositorio es mi **Base de Conocimientos Técnica (Second Brain)**. Trasladado desde Hugo a **MkDocs**, este sitio funciona como un manual de vuelo operativo para procedimientos de administración de sistemas, ingeniería de plataforma y protocolos de IA.
+Inside of your Astro + Starlight project, you'll see the following folders and files:
 
-A diferencia de un blog, aquí prima la **atomicidad y la recuperabilidad** de la información mediante una arquitectura de enlaces inteligentes.
+```
+.
+├── public/
+├── src/
+│   ├── assets/
+│   ├── content/
+│   │   └── docs/
+│   └── content.config.ts
+├── astro.config.mjs
+├── package.json
+└── tsconfig.json
+```
 
-### Arquitectura de la Solución
+Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
 
-- **Motor:** [MkDocs](https://www.mkdocs.org/) (Basado en Python).
-- **Interfaz:** [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/), optimizado para documentación técnica avanzada.
-- **Navegación:** Gestión automática mediante `awesome-pages` y referencias cruzadas con `autorefs`.
-- **Pipeline:** Despliegue automatizado en GitHub Pages mediante GitHub Actions.
+Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
----
+Static assets, like favicons, can be placed in the `public/` directory.
 
-## 🛠️ Desarrollo Local
+## 🧞 Commands
 
-Para trabajar en esta KB, se requiere **Python 3.x** y un entorno virtual configurado.
+All commands are run from the root of the project, from a terminal:
 
-### Instalación y ejecución
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-1. **Clonar el repositorio:**
+## 👀 Want to learn more?
 
-   ```bash
-   git clone git@github.com:daniel-zamo/kb.git
-   cd kb
-   ```
-
-2. **Configurar el entorno virtual e instalar dependencias:**
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-
-3. **Levantar el servidor de desarrollo:**
-
-   ```bash
-   mkdocs serve
-   ```
-
-   *El sitio estará disponible en `http://127.0.0.1:8000/`.*
-
----
-
-## 🚀 Pipeline de Despliegue (CI/CD)
-
-El sitio se sincroniza automáticamente con **GitHub Pages** al detectar cambios en la rama principal.
-
-- **Workflow:** `.github/workflows/gh-pages.yml`
-- **Configuración:** En el repositorio, ir a *Settings -> Pages* y asegurar que la fuente sea `GitHub Actions`.
-
----
-
-## 📂 Estructura de Contenidos
-
-- `docs/`: Contenido fuente en Markdown.
-  - `ai-protocols/`: Prompts y flujos de trabajo con IA.
-  - `linux/`: Administración de sistemas y storage.
-  - `productivity/`: Optimización de VS Code y metodologías.
-- `mkdocs.yml`: Configuración central del sitio y plugins.
-
----
-
-## ⚖️ Licencia
-
-Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
-
-<div align="center">
-Desarrollado con mentalidad DevOps por Daniel Oscar Zamo.
-</div>
+Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).

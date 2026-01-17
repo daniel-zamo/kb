@@ -1,0 +1,71 @@
+---
+title: "🛠️ Knowledge Base: Mis Notas Técnicas"
+description: Bienvenido a mi repositorio central de conocimiento de Platform Engineering.
+template: splash
+hero:
+  tagline: Bienvenido a mi repositorio central de conocimiento. Aquí documento procesos y configuraciones de mi flujo de trabajo como Platform Engineer.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Empezar a leer
+      link: /kb/linux/
+      icon: right-arrow
+      variant: primary
+    - text: Ver repositorio
+      link: https://github.com/daniel-zamo/kb
+      icon: external
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## 📂 Categorías Principales
+
+<CardGrid stagger>
+  <LinkCard
+    title="Protocolos (prompt) de IA"
+    description="Estrategias y prompts maestros para la generación de activos técnicos."
+    href="/kb/ai-protocols/"
+  />
+  <LinkCard
+    title="Linux & Infra"
+    description="Administración de sistemas, volúmenes LVM y hardening."
+    href="/kb/linux/"
+  />
+  <LinkCard
+    title="Productividad"
+    description="Optimización de VS Code y automatización de tareas."
+    href="/kb/productivity/"
+  />
+  <LinkCard
+    title="SSG & Docs"
+    description="Gestión de sitios estáticos con MkDocs, Hugo y Astro."
+    href="/kb/ssg/"
+  />
+  <LinkCard
+    title="Windows Admin"
+    description="Snippets de PowerShell y configuraciones específicas."
+    href="/kb/windows/"
+  />
+</CardGrid>
+
+---
+
+## 🚀 Sobre este sitio
+
+Este proyecto es un **Laboratorio de Documentación Viva**.
+
+<CardGrid>
+  <Card title="Stack" icon="setting">
+    Astro + Starlight (Migrado desde MkDocs Material).
+  </Card>
+  <Card title="Despliegue" icon="rocket">
+    GitHub Actions automático hacia GitHub Pages.
+  </Card>
+  <Card title="Filosofía" icon="approve-check-circle">
+    "Si lo haces más de dos veces, documéntalo".
+  </Card>
+</CardGrid>
+
+:::tip[Búsqueda Rápida]
+Presiona `Ctrl + K` (o `Cmd + K` en Mac) en cualquier momento para abrir el buscador global y encontrar comandos específicos rápidamente.
+:::
