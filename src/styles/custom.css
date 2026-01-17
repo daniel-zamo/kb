@@ -17,38 +17,88 @@
     margin: 0 auto;
 }
 */
-/* Optimizaciones de visualización para diagramas de arquitectura */
+/* --- CONFIGURACIÓN DE LAYOUT --- */
+:root {
+    /* Aumentamos el ancho máximo del contenido (Default es ~45rem) */
+    /* 80rem permite diagramas grandes sin romper las columnas laterales */
+    /* 80rem; <-- valor inicial v1 , funcional */
+    --sl-content-width: 20rem;
 
+}
+
+/* Ajuste para pantallas muy grandes */
+/* 72rem <-- valor inicial v1 , funcional */
+@media (min-width: 72rem) {
+
+    :root {
+        /* 85rem; <-- valor inicial v1 , funcional */
+        --sl-content-width: 85rem;
+
+    }
+}
+
+/* --- CORRECCIÓN DE CONTRASTE: SELECTOR DE TEMA --- */
+/* Mejora el selector de modo oscuro/claro para que no se vea "lavado" */
+starlight-theme-select select {
+    background-color: var(--sl-color-gray-6) !important;
+    border: 1px solid var(--sl-color-gray-4) !important;
+    color: var(--sl-color-white) !important;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+starlight-theme-select select:hover {
+    border-color: var(--sl-color-accent);
+}
+
+/* --- OPTIMIZACIÓN DE DIAGRAMAS MERMAID --- */
 .mermaid-diagram-container {
     display: flex;
     justify-content: center;
-    background-color: var(--sl-color-gray-6);
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin: 1.5rem 0;
+    background-color: #0f1117;
+    /* Fondo oscuro profundo tipo VS Code */
+    padding: 2rem;
+    border-radius: 0.75rem;
+    margin: 2rem 0;
     border: 1px solid var(--sl-color-gray-5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     overflow-x: auto;
 }
 
-/* Asegura que los diagramas ocupen el ancho correcto */
+/* Estilización de los elementos internos del SVG de Mermaid */
 .mermaid-diagram-container svg {
     max-width: 100% !important;
     height: auto !important;
 }
 
-/* Forzar legibilidad de textos en diagramas */
-.mermaid-diagram-container .node text,
-.mermaid-diagram-container .edgeLabel {
-    fill: var(--sl-color-white) !important;
-    font-family: var(--sl-font-mono) !important;
+/* Colores de Ingeniería para el diagrama (Modo Dark) */
+.mermaid-diagram-container .node rect,
+.mermaid-diagram-container .node circle,
+.mermaid-diagram-container .node polygon {
+    fill: #1e293b !important;
+    /* Azul pizarra oscuro */
+    stroke: var(--sl-color-accent-high) !important;
+    /* Color principal de tu tema */
+    stroke-width: 1.5px !important;
 }
 
-/* Ocultar el bloque original antes de que el JS lo procese para evitar salto visual */
-code.language-mermaid {
-    display: none;
+.mermaid-diagram-container .node .label {
+    color: var(--sl-color-white) !important;
+    font-weight: 500;
 }
 
-/* Oculta el bloque de código de mermaid mientras se procesa */
+.mermaid-diagram-container .edgePath .path {
+    stroke: var(--sl-color-gray-3) !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid-diagram-container .marker {
+    fill: var(--sl-color-gray-3) !important;
+}
+
+/* --- LIMPIEZA VISUAL --- */
+/* Evita el salto visual ocultando el código raw de mermaid */
 pre:has(code.language-mermaid) {
-    display: none;
+    display: none !important;
 }
