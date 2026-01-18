@@ -3,24 +3,25 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
 	site: 'https://daniel-zamo.github.io',
-	base: '/kb', // Base URL crítica para assets
-	redirects: { '/': '/kb/es/' },
+	base: '/kb',
+	redirects: { '/': '/es/', '/es': '/es/' },
+
+
 	integrations: [
 		starlight({
 			title: 'Notas Técnicas',
 			defaultLocale: 'es',
-			// Configuración de idiomas para asegurar que cargue es.json
+			// Definimos 'es' explícitamente para que coincida con la carpeta src/content/docs/es/
 			locales: {
-				root: { label: 'Español', lang: 'es', },
+				es: { label: 'Español', lang: 'es', },
 			},
-
 			sidebar: [
 				{
-					label: 'Documentación',
-					autogenerate: {
-						directory: '',
-						collapsed: false
-					},
+					label: 'Base de Conocimiento',
+					// IMPORTANTE: autogeneramos desde 'es' 
+					// para que NO aparezca la carpeta 'es' en el menú lateral
+					autogenerate: { directory: 'es' },
+					collapsed: false
 				},
 			],
 			customCss: ['./src/styles/custom.css'],
