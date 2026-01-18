@@ -8,14 +8,17 @@ export default defineConfig({
 		starlight({
 			title: 'Notas Técnicas',
 			defaultLocale: 'es',
+			// Configuración de idiomas para asegurar que cargue es.json
+			locales: {
+				root: { label: 'Español', lang: 'es', },
+			},
+
 			sidebar: [
-				//				{
-				//					label: 'Inicio',
-				//					link: '/',
-				//				},
 				{
-					label: 'Notas',
-					autogenerate: { directory: '' },
+					label: 'Base de Conocimiento',
+					autogenerate: {
+						directory: ''
+					},
 				},
 			],
 			customCss: ['./src/styles/custom.css'],
