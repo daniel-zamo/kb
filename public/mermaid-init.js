@@ -2,7 +2,16 @@ import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.mi
 
 mermaid.initialize({
   startOnLoad: false,
-  theme: 'dark',
+  theme: 'base', // Usamos 'base' para personalizarlo totalmente
+  themeVariables: {
+    primaryColor: '#3b82f6', // Azul moderno
+    primaryTextColor: '#ffffff',
+    primaryBorderColor: '#60a5fa',
+    lineColor: '#94a3b8',
+    secondaryColor: '#1e293b',
+    tertiaryColor: '#0f172a',
+    fontFamily: 'ui-sans-serif, system-ui, sans-serif'
+  },
   securityLevel: 'loose'
 });
 

@@ -1,64 +1,67 @@
-/* Maximizar el ancho del contenido */
-/*
+/* --- 1. CONFIGURACIÓN DE LAYOUT (ANCHO DE PÁGINA) --- */
 :root {
-    --sl-content-width: 100% !important;
-    --sl-text-base: 1.1rem;
-}
-*/
-
-/* Opcional: Ajustar el layout para que no se pegue a los bordes */
-/*
-.main-frame {
-    max-width: 100vw;
+    /* Balance ideal para lectura y diagramas */
+    --sl-content-width: 56rem;
 }
 
-.content-panel {
-    max-width: 95% !important;
-    margin: 0 auto;
-}
-*/
-/* --- CONFIGURACIÓN DE LAYOUT --- */
-:root {
-    /* Aumentamos el ancho máximo del contenido (Default es ~45rem) */
-    /* 80rem permite diagramas grandes sin romper las columnas laterales */
-    /* 80rem; <-- valor inicial v1 , funcional */
-    --sl-content-width: 60rem;
-
-}
-
-/* Ajuste para pantallas muy grandes */
-/* 72rem <-- valor inicial v1 , funcional */
 @media (min-width: 72rem) {
-
     :root {
-        /* 85rem; <-- valor inicial v1 , funcional */
+        /* Aprovechamiento de pantallas grandes para arquitectura técnica */
         --sl-content-width: 85rem;
-
     }
 }
 
-/* --- CORRECCIÓN DE CONTRASTE: SELECTOR DE TEMA --- */
-/* Mejora el selector de modo oscuro/claro para que no se vea "lavado" */
-/* --- CORRECCIÓN DE CONTRASTE Y SOLAPAMIENTO: SELECTOR DE TEMA --- */
+/* --- 2. SELECTOR DE TEMA (CORRECCIÓN DE ICONOS Y CLIC) --- */
+starlight-theme-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+starlight-theme-select label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
 starlight-theme-select select {
+    /* Colores aprobados para contraste óptimo */
     background-color: var(--sl-color-gray-6) !important;
     border: 1px solid var(--sl-color-gray-4) !important;
     color: var(--sl-color-white) !important;
-    /* Aumentamos el padding derecho (2.5rem) para dar espacio al icono */
-    padding: 0.25rem 2.5rem 0.25rem 0.75rem !important;
+
+    /* Espaciado simétrico para evitar solapamiento con iconos (izq y der) */
+    padding: 0.25rem 2.2rem 0.25rem 2.2rem !important;
+
     border-radius: 0.4rem;
     cursor: pointer;
-    /* Aseguramos un ancho mínimo para que el texto no baile según la palabra */
-    min-width: 7.5rem;
-    /* Suavizamos la apariencia */
+    min-width: 8.5rem;
     font-size: var(--sl-text-sm) !important;
     line-height: 1.5;
+
+    /* Reseteo de estilos nativos para control total */
+    appearance: none;
+    -webkit-appearance: none;
+    z-index: 1;
 }
 
-/* El icono que Starlight pone encima necesita ser respetado */
-starlight-theme-select label {
-    /* Esto asegura que el icono (que suele ser un <svg> hermano) no bloquee el click */
-    pointer-events: none;
+/* Posicionamiento del Icono Izquierdo (Sol/Luna) */
+starlight-theme-select svg:first-of-type {
+    position: absolute !important;
+    left: 0.75rem !important;
+    pointer-events: none !important;
+    /* Permite clickear el select debajo */
+    z-index: 2;
+}
+
+/* Posicionamiento del Icono Derecho (Flecha de despliegue) */
+starlight-theme-select svg:last-of-type {
+    position: absolute !important;
+    right: 0.75rem !important;
+    pointer-events: none !important;
+    /* Permite clickear el select debajo */
+    z-index: 2;
 }
 
 starlight-theme-select select:hover {
@@ -66,34 +69,34 @@ starlight-theme-select select:hover {
     background-color: var(--sl-color-gray-5) !important;
 }
 
-/* --- OPTIMIZACIÓN DE DIAGRAMAS MERMAID --- */
+/* --- 3. OPTIMIZACIÓN DE DIAGRAMAS MERMAID --- */
 .mermaid-diagram-container {
     display: flex;
     justify-content: center;
     background-color: #0f1117;
-    /* Fondo oscuro profundo tipo VS Code */
-    padding: 2rem;
+    /* Fondo tipo terminal/editor profesional */
+    padding: 2.5rem;
     border-radius: 0.75rem;
     margin: 2rem 0;
     border: 1px solid var(--sl-color-gray-5);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
     overflow-x: auto;
 }
 
-/* Estilización de los elementos internos del SVG de Mermaid */
+/* Ajuste de SVG para fluidez */
 .mermaid-diagram-container svg {
     max-width: 100% !important;
     height: auto !important;
 }
 
-/* Colores de Ingeniería para el diagrama (Modo Dark) */
+/* Estilización de Nodos y Conectores (Modo Ingeniería) */
 .mermaid-diagram-container .node rect,
 .mermaid-diagram-container .node circle,
 .mermaid-diagram-container .node polygon {
     fill: #1e293b !important;
     /* Azul pizarra oscuro */
     stroke: var(--sl-color-accent-high) !important;
-    /* Color principal de tu tema */
+    /* Color de acento del sitio */
     stroke-width: 1.5px !important;
 }
 
@@ -111,8 +114,8 @@ starlight-theme-select select:hover {
     fill: var(--sl-color-gray-3) !important;
 }
 
-/* --- LIMPIEZA VISUAL --- */
-/* Evita el salto visual ocultando el código raw de mermaid */
+/* --- 4. LIMPIEZA VISUAL (PRE-RENDER) --- */
+/* Oculta el bloque de código original de Mermaid para evitar parpadeos visuales */
 pre:has(code.language-mermaid) {
     display: none !important;
 }

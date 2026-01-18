@@ -1,38 +1,32 @@
+// kb/astro.config.mjs
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
 	site: 'https://daniel-zamo.github.io',
-	base: '/kb', // Base URL crítica para assets
+	base: '/kb',
+	// Redirección crítica: de /kb a /kb/es/
+	redirects: {
+		'/': '/kb/es/',
+	},
 	integrations: [
 		starlight({
 			title: 'Notas Técnicas',
 			defaultLocale: 'es',
-			// Configuración de idiomas para asegurar que cargue es.json
 			locales: {
-				root: { label: 'Español', lang: 'es', },
+				es: {
+					label: 'Español',
+					lang: 'es',
+				},
 			},
-
 			sidebar: [
 				{
 					label: 'Base de Conocimiento',
-					autogenerate: {
-						directory: ''
-					},
+					// IMPORTANTE: Ahora autogeneramos desde la carpeta 'es'
+					autogenerate: { directory: 'es', collapsed: false },
 				},
 			],
-			customCss: ['./src/styles/custom.css'],
-			head: [
-				{
-					tag: 'script',
-					attrs: {
-						type: 'module',
-						// Usamos la ruta absoluta incluyendo el base para despliegue en GH Pages
-						src: '/kb/mermaid-init.js',  // El prefijo /kb/ es vital para GitHub Pages
-						defer: true,
-					},
-				},
-			],
+			// ... tus otros ajustes (mermaid, customCss, etc.)
 		}),
 	],
 });
