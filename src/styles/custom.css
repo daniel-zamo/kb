@@ -1,15 +1,17 @@
 /* --- 1. CONFIGURACIÓN DE LAYOUT (ANCHO DE PÁGINA) --- */
+/*
 :root {
-    /* Balance ideal para lectura y diagramas */
+    /* Balance ideal para lectura y diagramas *-/
     --sl-content-width: 56rem;
 }
 
 @media (min-width: 72rem) {
     :root {
-        /* Aprovechamiento de pantallas grandes para arquitectura técnica */
+        /* Aprovechamiento de pantallas grandes para arquitectura técnica *-/
         --sl-content-width: 85rem;
     }
 }
+*/
 
 /* --- 2. SELECTOR DE TEMA (CORRECCIÓN DE ICONOS Y CLIC) --- */
 starlight-theme-select {

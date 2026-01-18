@@ -4,7 +4,6 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	site: 'https://daniel-zamo.github.io',
 	base: '/kb', // Base URL crítica para assets
-	redirects: { '/': '/kb/es/' },
 	integrations: [
 		starlight({
 			title: 'Notas Técnicas',
@@ -16,10 +15,9 @@ export default defineConfig({
 
 			sidebar: [
 				{
-					label: 'Documentación',
+					label: 'Base de Conocimiento',
 					autogenerate: {
-						directory: '',
-						collapsed: false
+						directory: 'es', collapsed: false,
 					},
 				},
 			],
